@@ -46,8 +46,10 @@ a {
     /* transition: .1s; */
 }
 #first {
-    height: 300px;
-    border: 1px solid pink;
+    /* height: 300px; */
+    
+    /* width: 100%; */
+    padding: 0;
 }
 #about {
     height: 400px;
