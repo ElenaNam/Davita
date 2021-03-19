@@ -32,7 +32,7 @@ module.exports = {
         { from: "src/assets/icons", to: "./assets/icons" },
         { from: "src/assets/bg", to: "./assets/bg" },
         { from: "src/assets/favicon", to: "./assets/favicon" },
-        { from: "src/assets/fonts", to: "./assets/fonts" },
+      
       ],
     }),    
   ],

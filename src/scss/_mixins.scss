@@ -1,0 +1,16 @@
+@import "./variables";
+@mixin section-bg {
+  margin: 30px 0;
+  padding: 5px 0 10px;
+  border-radius: 7px;
+  /* background: url("../assets/bg/bg-section-title.png") 50% #f2f2f2; */
+  background: #f5f5f5;
+  text-align: center;
+}
+@mixin section-title {
+  font: 300 40px/48px "Open Sans", "Arial", sans-serif;
+}
+@mixin text-default {
+  font: 300 14px/23px "Open Sans", "Arial", sans-serif;
+  /* color: $font-color-default; */
+}

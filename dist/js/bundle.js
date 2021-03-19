@@ -18056,9 +18056,10 @@ var _bootstrap2 = _interopRequireDefault(_bootstrap);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)(function () {
-  (0, _jquery2.default)("body").css("color", "blue");
-});
+/* jQuery(function () {
+  jQuery("body").css("color", "blue");
+}); */
+console.log("davita");
 })();
 
 /******/ })()

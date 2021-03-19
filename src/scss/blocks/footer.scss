@@ -1,0 +1,16 @@
+@import "../mixins";
+@import "../variables";
+
+#footer {
+  width: 100%;
+
+  .footer-contacts__wrapper {
+    background: url("../assets/bg/footer.jpg");
+  }
+}
+
+.contacts {
+  height: 250px;
+
+  background-size: cover;
+}
