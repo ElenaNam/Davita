@@ -6,11 +6,12 @@
 
   .footer-contacts__wrapper {
     background: url("../assets/bg/wood.jpg");
+    background-size: cover;
   }
 }
-
+.map {
+  height: 400px;
+}
 .contacts {
   height: 250px;
-
-  background-size: cover;
 }
