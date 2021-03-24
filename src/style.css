@@ -160,6 +160,12 @@ section {
   text-align: center;
   margin-bottom: 10px;
 }
+#about .card p mark {
+  color: #d2003c;
+  background-color: #fff27d;
+  border-top: 1px solid #d2003c;
+  border-bottom: 1px solid #d2003c;
+}
 
 #news {
   height: 500px;

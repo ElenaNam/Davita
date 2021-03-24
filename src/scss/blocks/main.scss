@@ -43,6 +43,12 @@ section {
     text-align: center;
     margin-bottom: 10px;
   }
+  & .card p mark {
+    color: #d2003c;
+    background-color: rgb(255, 242, 125);
+    border-top: 1px solid #d2003c;
+    border-bottom: 1px solid #d2003c;
+  }
 }
 #news {
   height: 500px;
