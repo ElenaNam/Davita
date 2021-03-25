@@ -112,6 +112,11 @@
   background: url("../assets/icons/right.png") no-repeat;
 }
 
+.main {
+  margin-top: 150px;
+  /* переделать*/
+}
+
 section {
   margin: 30px 0;
 }
@@ -120,8 +125,9 @@ section {
   margin: 30px 0;
   padding: 5px 0 10px;
   border-radius: 7px;
-  /* background: url("../assets/bg/bg-section-title.png") 50% #f2f2f2; */
-  background: #f5f5f5;
+  background: url("../assets/bg/bg-section-title.png");
+  /* background: #f5f5f5; */
+  background-attachment: fixed;
   text-align: center;
 }
 .section-title h1 {
@@ -146,25 +152,51 @@ section {
   justify-content: space-between;
 }
 #about .card {
-  max-width: 18rem;
+  padding: 15px 10px 20px;
+  margin-bottom: 30px;
+  max-width: 280px;
   width: 100%;
   align-items: center;
-  /* height: fit-content; */
+}
+#about .card:hover img {
+  transform: translateY(-5px);
+}
+#about .card:hover h4 {
+  color: #cc0a3b;
+}
+#about .card:hover p {
+  color: #000;
+}
+#about .card-body {
+  padding: 0;
 }
 #about .card img {
-  width: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  max-width: 260px;
+  height: 110px;
+  transition: 0.2s ease;
 }
-#about .card h5 {
+#about .card h4 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
+  font-weight: lighter;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 1.45em;
+  color: #999999;
+  transition: 0.2s ease;
 }
-#about .card p mark {
-  color: #d2003c;
-  background-color: #fff27d;
-  border-top: 1px solid #d2003c;
-  border-bottom: 1px solid #d2003c;
+#about .card p {
+  max-height: 70px;
+  text-align: center;
+  /* font: 300 14px/23px "Open Sans", "Arial", sans-serif; */
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+  color: #999999;
+  transition: 0.2s ease;
+  overflow: hidden;
 }
 
 #news {
@@ -188,34 +220,7 @@ section {
   max-width: 430px;
   /* margin: 0 5px; */
 }
-#reviews .card .card-text::before {
-  content: "«";
-}
-#reviews .card .card-text::after {
-  content: "»";
-}
 
-/* .cards {
-  display: flex;
-  /* justify-content: center; */
-/* justify-content: space-between;
-  margin-top: 30px;
-  & .card {
-    margin: 0 auto;
-    min-width: 300px;
-    max-width: 430px;
-    /* margin: 0 5px; */
-/* & .card-text::before {
-      content: "\00AB";
-    }
-    & .card-text::after {
-      content: "\00BB";
-    }
-  } */
-/*   & .card + .card {
-    margin-left: 5px;
-  } */
-/*}*/
 .img-wrapper {
   padding: 5px;
   text-align: center;
@@ -235,14 +240,53 @@ section {
 #footer .footer-contacts__wrapper {
   background: url("../assets/bg/wood.jpg");
   background-size: cover;
+  padding-top: 30px;
+}
+#footer .footer-contacts__wrapper .col {
+  /*  border: 1px solid green; */
+  height: 250px;
 }
 
 .map {
   height: 400px;
 }
 
-.contacts {
-  height: 250px;
+.contacts-1 ul {
+  padding: 0;
+}
+.contacts-1 ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.contacts-1 ul li div {
+  padding: 5px;
+}
+.contacts-1 ul li .address__img {
+  height: fit-content;
+}
+.contacts-1 ul li .address__text p {
+  margin-bottom: 0;
+}
+.contacts-1 ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contacts-2 a {
+  text-decoration: none;
+  color: #333;
+}
+.contacts-2 a span {
+  margin-left: 5px;
+}
+.contacts-2 ul {
+  padding: 0;
+}
+.contacts-2 ul li {
+  border: 1px solid orange;
+  list-style: none;
+  display: contents;
 }
 
 html {
@@ -252,8 +296,11 @@ html {
 body {
   color: #333;
   cursor: default;
-  font: 300 14px/23px "Open Sans", "Arial", sans-serif;
-  /* color: $font-color-default; */
+  /* font: 300 14px/23px "Open Sans", "Arial", sans-serif; */
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
 }
 
 .container-fluid {

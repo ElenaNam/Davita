@@ -1,7 +1,11 @@
 @import "../mixins";
 @import "../variables";
+
 @import "./catalog.scss";
 
+.main {
+  margin-top: 150px; /* переделать*/
+}
 section {
   margin: 30px 0;
 }
@@ -29,25 +33,48 @@ section {
     justify-content: space-between;
   }
   & .card {
-    max-width: 18rem;
+    padding: 15px 10px 20px;
+    margin-bottom: 30px;
+    max-width: 280px;
     width: 100%;
     align-items: center;
-    /* height: fit-content; */
+
+    &:hover {
+      & img {
+        transform: translateY(-5px);
+      }
+      & h4 {
+        color: $font-color-active-1;
+      }
+      & p {
+        color: $font-color-dark;
+      }
+    }
+  }
+  & .card-body {
+    padding: 0;
   }
   & .card img {
-    width: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    max-width: 260px;
+    height: 110px;
+    transition: 0.2s ease;
   }
-  & .card h5 {
+
+  & .card h4 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
+    @include text-card-h4();
+    color: $font-color-h4;
+    transition: 0.2s ease;
   }
-  & .card p mark {
-    color: #d2003c;
-    background-color: rgb(255, 242, 125);
-    border-top: 1px solid #d2003c;
-    border-bottom: 1px solid #d2003c;
+  & .card p {
+    max-height: 70px;
+    text-align: center;
+    @include text-default();
+    color: $font-color-h4;
+    transition: 0.2s ease;
+    overflow: hidden;
   }
 }
 #news {
@@ -68,35 +95,9 @@ section {
     min-width: 300px;
     max-width: 430px;
     /* margin: 0 5px; */
-    & .card-text::before {
-      content: "\00AB";
-    }
-    & .card-text::after {
-      content: "\00BB";
-    }
   }
 }
-/* .cards {
-  display: flex;
-  /* justify-content: center; */
-/* justify-content: space-between;
-  margin-top: 30px;
-  & .card {
-    margin: 0 auto;
-    min-width: 300px;
-    max-width: 430px;
-    /* margin: 0 5px; */
-/* & .card-text::before {
-      content: "\00AB";
-    }
-    & .card-text::after {
-      content: "\00BB";
-    }
-  } */
-/*   & .card + .card {
-    margin-left: 5px;
-  } */
-/*}*/
+
 .img-wrapper {
   padding: 5px;
   text-align: center;

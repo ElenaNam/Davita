@@ -7,11 +7,50 @@
   .footer-contacts__wrapper {
     background: url("../assets/bg/wood.jpg");
     background-size: cover;
+    padding-top: 30px;
+    & .col {
+      /*  border: 1px solid green; */
+      height: 250px;
+    }
   }
 }
 .map {
   height: 400px;
 }
-.contacts {
-  height: 250px;
+.contacts-1 {
+  & ul {
+    padding: 0;
+  }
+  & ul li {
+    list-style: none;
+    @include contacts-item();
+    & div {
+      padding: 5px;
+    }
+    & .address__img {
+      height: fit-content;
+    }
+    & .address__text p {
+      margin-bottom: 0;
+    }
+    & a {
+      @include link();
+    }
+  }
+}
+.contacts-2 {
+  & a {
+    @include link();
+    & span {
+      margin-left: 5px;
+    }
+  }
+  & ul {
+    padding: 0;
+  }
+  & ul li {
+    border: 1px solid orange;
+    list-style: none;
+    display: contents;
+  }
 }
