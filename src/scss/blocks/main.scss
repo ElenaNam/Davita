@@ -1,10 +1,10 @@
 @import "../mixins";
 @import "../variables";
-
+@import "../media";
 @import "./catalog.scss";
 
 .main {
-  margin-top: 150px; /* переделать*/
+  margin-top: 150px; /* переделать?*/
 }
 section {
   margin: 30px 0;
@@ -15,8 +15,8 @@ section {
     @include section-title();
   }
 }
-
 #first {
+  overflow-x: hidden;
   & .carousel-control-prev {
     margin-left: 5%; /*перепроверить*/
   }
@@ -24,9 +24,7 @@ section {
     margin-right: 5%; /*перепроверить*/
   }
 }
-
 #about {
-  /*  border: 1px solid rgb(167, 25, 49); */
   & .cards {
     display: flex;
     flex-wrap: wrap;
@@ -91,10 +89,13 @@ section {
     margin-top: 30px;
   }
   & .card {
-    margin: 0 auto;
     min-width: 300px;
     max-width: 430px;
-    /* margin: 0 5px; */
+    padding: 0;
+    & .row {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

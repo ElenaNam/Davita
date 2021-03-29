@@ -20,66 +20,87 @@
   </head>
   <body>
     <header class="header fixed-top">
-      <!-- <header class="header"> -->
-      <div class="container-md px-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand mr-2 p-0" href="#">
-            <img
-              src="assets/images/logo-long.png"
-              width="80%"
-              height="auto"
-              alt="logo"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class="header__top-wrapper">
+        <div class="header__top container-md px-0">
+          <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 header-block__center">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about">О нас</a>
-              </li>
+            <a class="navbar-brand p-0" href="#first">
+              <img
+                src="assets/images/logo-small.png"
+                width="44px"
+                height="auto"
+                alt="logo"
+              />
+            </a>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#news">Новости</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#catalog">Каталог</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Контакты</a>
-              </li>
-            </ul>
-
-            <div class="navbar-text header-block__right">
+            <div class="header__top-left navbar-text col-md-1 col-lg-3">
               <a
-                class="nav-link pr-0 text-right"
+                class="nav-link pl-0 text-left"
                 target="_blank"
                 href="https://yandex.ru/maps/51/samara/?display-text=DaVita&ll=50.129954%2C53.187692&mode=search&sctx=ZAAAAAgBEAAaKAoSCfYksDkHDUlAEQiQoWMHmUpAEhIJS2z9%2F3990T8RBbsHR1XDuz8oCjgAQJudBkgBVc3MzD5YAGJFcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9BZHZlcnRzL05vdFNob3dPbkhhcmRSdWJyaWNGZWF0dXJlL0VuYWJsZT10cnVlagJydXAAnQHNzEw9oAEAqAEAvQHfQIBL6gEA8gEA%2BAEAggIZKChjaGFpbl9pZDooNDM4MjEzODI0MCkpKYoCAA%3D%3D&sll=50.129954%2C53.187692&sspn=0.025889%2C0.010276&text=%7B%22text%22%3A%22DaVita%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%224382138240%22%5D%7D%5D%7D&whatshere%5Bpoint%5D=50.128198%2C53.187341&whatshere%5Bzoom%5D=15.4&z=15.4"
               >
-                Самара, ТЦ "Гудок"
+                <img src="assets/icons/address.png" alt="address" />
+                <span>Самара, ТЦ "Гудок"</span>
               </a>
-              <a class="nav-link pr-0 text-right" href="tel:+79649871644"
-                >+7 (964) 98-71-644</a
-              >
             </div>
-          </div>
-        </nav>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="header__top-center navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about"
+                    >О нас</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#news">Новости</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#catalog">Каталог</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header__top-right navbar-text col-md-1 col-lg-3">
+              <a class="nav-link pr-0 text-right" href="tel:+79649871644">
+                <img src="assets/icons/tel.png" alt="phone" />
+                <span>+7 (964) 98-71-644</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__bottom container-md">
+        <a class="navbar-brand" href="#first">
+          <img
+            src="assets/images/logo-middle.png"
+            width="140px"
+            height="auto"
+            alt="logo"
+          />
+        </a>
       </div>
     </header>
-    <main class="main">
-      <section id="first" class="container-fluid">
+
+    <!--    <main class="main" role="main">
+      <section id="first" class="anchor container-fluid">
         <div
           id="carouselExampleControls"
           class="carousel slide"
@@ -154,7 +175,7 @@
           </a>
         </div>
       </section>
-      <section id="about" class="container-md">
+      <section id="about" class="anchor container-md">
         <div class="section-title">
           <h1>О нас</h1>
         </div>
@@ -282,13 +303,16 @@
           </div>
         </div>
       </section>
-      <section id="news" class="container-md">
+      <section id="news" class="anchor container-md">
         <div class="section-title">
           <h1>Новости</h1>
         </div>
+        <article></article>
+        <article></article>
+        <article></article>
       </section>
 
-      <section id="catalog" class="container-md px-0">
+      <section id="catalog" class="anchor container-md px-0">
         <div class="section-title">
           <h1>Каталог</h1>
         </div>
@@ -482,12 +506,12 @@
         </div>
       </section>
 
-      <section id="reviews" class="container-md">
+      <section id="reviews" class="anchor container-md">
         <div class="col section-title">
           <h1>Отзывы</h1>
         </div>
-        <div class="row cards">
-          <div class="card mb-3 col-lg-3 col-md-6 col-sm-8 col-xs-12">
+        <div class="cards">
+          <div class="card mb-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
             <div class="row g-0">
               <div class="col-md-4 img-wrapper">
                 <img
@@ -502,16 +526,16 @@
                   <p class="card-text">
                     &laquo;Недавно купили шкаф для одежды. Очень
                     довольны!&raquo;
-                  </p>
-                  <!--                   <p class="card-text">
+                  </p>-->
+    <!--                   <p class="card-text">
                     <small class="text-muted"></small>
                   </p> -->
-                </div>
+    <!--  </div>
               </div>
             </div>
           </div>
 
-          <div class="card mb-3 col-lg-3 col-md-6 col-sm-8 col-xs-12">
+          <div class="card mb-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
             <div class="row g-0">
               <div class="col-md-4 img-wrapper">
                 <img
@@ -531,7 +555,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3 col-lg-3 col-md-6 col-sm-8 col-xs-12">
+          <div class="card mb-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
             <div class="row g-0">
               <div class="col-md-4 img-wrapper">
                 <img
@@ -553,8 +577,9 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer id="footer">
+    </main> -->
+
+    <!-- <footer id="contacts" class="anchor">
       <div class="container-md">
         <div class="col section-title">
           <h1>Контакты</h1>
@@ -711,9 +736,9 @@
         <span>Самара</span>
         <span>2021</span>
       </div>
-    </footer>
+    </footer> -->
 
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
@@ -723,6 +748,6 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js"></script> -->
   </body>
 </html>

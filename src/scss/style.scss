@@ -3,6 +3,7 @@
 @import "./blocks/header.scss";
 @import "./blocks/main.scss";
 @import "./blocks/footer.scss";
+@import "./media";
 
 html {
   scroll-behavior: smooth;
@@ -20,6 +21,10 @@ body {
 .container-md {
   padding: 0;
 }
-strong {
-  font-weight: bold;
+.anchor::before {
+  display: block;
+  content: "";
+  margin-top: -150px;
+  height: 150px;
+  visibility: hidden;
 }

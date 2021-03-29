@@ -3,9 +3,9 @@
   margin: 30px 0;
   padding: 5px 0 10px;
   border-radius: 7px;
-  background: url("../assets/bg/bg-section-title.png");
-  /* background: #f5f5f5; */
-  background-attachment: fixed;
+  /* background: url("../assets/bg/bg-section-title.png"); */
+  background: #f5f5f5;
+  /* background-attachment: fixed; */
   text-align: center;
 }
 @mixin section-title {
