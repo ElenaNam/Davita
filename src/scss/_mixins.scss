@@ -11,6 +11,9 @@
 @mixin section-title {
   font: 300 40px/48px "Open Sans", "Arial", sans-serif;
 }
+@mixin h2 {
+  font: 300 32px/48px "Open Sans", "Arial", sans-serif;
+}
 @mixin text-default {
   /* font: 300 14px/23px "Open Sans", "Arial", sans-serif; */
   font-family: "Open Sans", "Arial", sans-serif;

@@ -1,13 +1,13 @@
 @charset "UTF-8";
-@media (min-width: 575px) {
-  .container-md {
-    max-width: 100%;
-  }
-}
 @media (max-width: 992px) {
   .container-md {
     max-width: 100%;
   }
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
 }
 
 .header__top-wrapper {
@@ -142,8 +142,10 @@
 }
 
 .header__bottom {
+  /* border: 1px solid salmon; */
   display: none;
-  padding: 10px 0 !important;
+  /* margin-top: 17px; */
+  padding: 17px 0 20px;
   height: 75px;
   align-items: center;
 }
@@ -157,11 +159,6 @@
   cursor: default;
 }
 
-@media (min-width: 575px) {
-  .container-md {
-    max-width: 100%;
-  }
-}
 @media (max-width: 992px) {
   .container-md {
     max-width: 100%;
@@ -246,7 +243,7 @@
 
 .main {
   margin-top: 150px;
-  /* переделать?*/
+  /* высота header */
 }
 
 section {
@@ -330,6 +327,23 @@ section {
   transition: 0.2s ease;
   overflow: hidden;
 }
+#about .instagram {
+  /* border: 1px solid orangered; */
+}
+#about .instagram .section-title {
+  background: transparent;
+  margin: 10px 0;
+}
+#about .instagram .section-title h2 {
+  font: 300 32px/48px "Open Sans", "Arial", sans-serif;
+}
+#about .instagram .instfeed {
+  background: rgba(51, 51, 51, 0.5);
+}
+#about .instagram .instfeed .instagram_gallery {
+  display: flex;
+  /* justify-content: center; */
+}
 
 #news {
   height: 500px;
@@ -337,7 +351,7 @@ section {
 }
 
 #reviews {
-  /* border: 1px solid rgb(16, 83, 22); */
+  border: 1px solid #105316;
   overflow: hidden;
 }
 #reviews .cards {
@@ -369,11 +383,11 @@ section {
   border-radius: 50%;
 }
 
-@media (min-width: 575px) {
-  .container-md {
-    max-width: 100%;
-  }
+#FAQ {
+  height: 400px;
+  border: 1px solid;
 }
+
 @media (max-width: 992px) {
   .container-md {
     max-width: 100%;
@@ -435,11 +449,6 @@ section {
   display: contents;
 }
 
-@media (min-width: 575px) {
-  .container-md {
-    max-width: 100%;
-  }
-}
 @media (max-width: 992px) {
   .container-md {
     max-width: 100%;
@@ -465,13 +474,15 @@ body {
 }
 
 .container-md {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .anchor::before {
   display: block;
   content: "";
   margin-top: -150px;
+  /* высота header */
   height: 150px;
   visibility: hidden;
 }

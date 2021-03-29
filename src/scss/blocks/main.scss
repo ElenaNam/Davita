@@ -4,7 +4,7 @@
 @import "./catalog.scss";
 
 .main {
-  margin-top: 150px; /* переделать?*/
+  margin-top: 150px; /* высота header */
 }
 section {
   margin: 30px 0;
@@ -74,13 +74,31 @@ section {
     transition: 0.2s ease;
     overflow: hidden;
   }
+  & .instagram {
+    /* border: 1px solid orangered; */
+    & .section-title {
+      background: transparent;
+      margin: 10px 0;
+      & h2 {
+        @include h2();
+      }
+    }
+    & .instfeed {
+      background: $font-color-border;
+
+      & .instagram_gallery {
+        display: flex;
+        /* justify-content: center; */
+      }
+    }
+  }
 }
 #news {
   height: 500px;
   border: 1px solid rgb(29, 16, 18);
 }
 #reviews {
-  /* border: 1px solid rgb(16, 83, 22); */
+  border: 1px solid rgb(16, 83, 22);
   overflow: hidden;
   & .cards {
     display: flex;
@@ -109,4 +127,9 @@ section {
   max-width: 100px;
   border: 1px solid $font-color-default;
   border-radius: 50%;
+}
+
+#FAQ {
+  height: 400px;
+  border: 1px solid;
 }

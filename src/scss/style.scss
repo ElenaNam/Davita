@@ -19,12 +19,13 @@ body {
   padding: 0;
 }
 .container-md {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .anchor::before {
   display: block;
   content: "";
-  margin-top: -150px;
+  margin-top: -150px; /* высота header */
   height: 150px;
   visibility: hidden;
 }

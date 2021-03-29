@@ -15,6 +15,40 @@
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.instagramFeed.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js"
+      integrity="sha512-/z6cDTmzplKFL9sRet94DsTK8ZdXIeIj4BZAVtjDKLG/DMl9lrQeOmVXMQrpb6KWwNNvqVAy+liFguc8jGOj6Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      (function ($) {
+        $(window).on("load", function () {
+          $.instagramFeed({
+            /* username: "davita_mebelsamara", */
+            username: "kot_mukha",
+            container: "#instfeed",
+            display_profile: false,
+            display_biography: false,
+            display_gallery: true,
+            display_captions: true,
+            callback: null,
+            styling: true,
+            items: 100,
+            items_per_row: 5,
+            margin: 0.2,
+          });
+        });
+      })(jQuery);
+    </script>
+
     <link rel="stylesheet" href="src/style.css" type="text/css" />
     <title>DaVitamebel-samara</title>
   </head>
@@ -72,6 +106,10 @@
                 </li>
 
                 <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Отзывы</a>
+                </li>
+
+                <li class="nav-item">
                   <a class="nav-link" href="#contacts">Контакты</a>
                 </li>
               </ul>
@@ -90,8 +128,8 @@
       <div class="header__bottom container-md">
         <a class="navbar-brand" href="#first">
           <img
-            src="assets/images/logo-middle.png"
-            width="140px"
+            src="assets/images/logo-long.png"
+            width="280px"
             height="auto"
             alt="logo"
           />
@@ -99,7 +137,7 @@
       </div>
     </header>
 
-    <!--    <main class="main" role="main">
+    <main class="main" role="main">
       <section id="first" class="anchor container-fluid">
         <div
           id="carouselExampleControls"
@@ -175,11 +213,11 @@
           </a>
         </div>
       </section>
+
       <section id="about" class="anchor container-md">
         <div class="section-title">
           <h1>О нас</h1>
         </div>
-
         <div class="cards">
           <div class="row gx-0 justify-content-between">
             <div class="card col-md-3">
@@ -302,7 +340,14 @@
             </div>
           </div>
         </div>
+        <div class="instagram">
+          <div class="section-title">
+            <h2>Мы в Инстаграм</h2>
+          </div>
+          <div id="instfeed" class="instfeed"></div>
+        </div>
       </section>
+
       <section id="news" class="anchor container-md">
         <div class="section-title">
           <h1>Новости</h1>
@@ -522,15 +567,12 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Арина</h5>
+                  <h5 class="card-title">Покупатель</h5>
+                  <p class="card-text">Мы ждем отзыв!</p>
                   <p class="card-text">
-                    &laquo;Недавно купили шкаф для одежды. Очень
-                    довольны!&raquo;
-                  </p>-->
-    <!--                   <p class="card-text">
                     <small class="text-muted"></small>
-                  </p> -->
-    <!--  </div>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -546,11 +588,8 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Сергей</h5>
-                  <p class="card-text">
-                    &laquo;Купил кухню "Тиффани" и за год ни разу не пожалел.
-                    Жена в восторге.&raquo;
-                  </p>
+                  <h5 class="card-title">Покупатель</h5>
+                  <p class="card-text">Мы ждем отзыв!</p>
                 </div>
               </div>
             </div>
@@ -566,20 +605,23 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Светлана</h5>
-                  <p class="card-text">
-                    &laquo;Очень уютный магазин. Вежливые продавцы. Собираемся
-                    купить стол - поедем только в Гудок.&raquo;
-                  </p>
+                  <h5 class="card-title">Покупатель</h5>
+                  <p class="card-text">Мы ждем отзыв!</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main> -->
 
-    <!-- <footer id="contacts" class="anchor">
+      <section id="FAQ" class="anchor container-md">
+        <div class="col section-title">
+          <h1>FAQ</h1>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts" class="anchor">
       <div class="container-md">
         <div class="col section-title">
           <h1>Контакты</h1>
@@ -736,9 +778,10 @@
         <span>Самара</span>
         <span>2021</span>
       </div>
-    </footer> -->
+    </footer>
+    -->
 
-    <!-- <script
+    <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
@@ -748,6 +791,6 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script>
   </body>
 </html>
