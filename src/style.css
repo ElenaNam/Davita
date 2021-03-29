@@ -5,6 +5,18 @@
   }
 }
 
+@media (max-width: 992px) {
+  .container-md {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-md {
+    max-width: 100%;
+  }
+}
+
 .header {
   background: white;
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
@@ -165,6 +177,18 @@
   }
 }
 
+@media (max-width: 992px) {
+  .container-md {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-md {
+    max-width: 100%;
+  }
+}
+
 #catalog {
   /* height: 600px; */
   /* border: 1px solid rgb(25, 46, 167); */
@@ -197,6 +221,9 @@
 .carousel {
   /* border: 1px solid rgb(255, 0, 128); */
 }
+.carousel-item {
+  text-align: center;
+}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -212,10 +239,22 @@
   /* left: -150px; */
   left: -10%;
 }
+@media (max-width: 992px) {
+  .carousel-control-prev {
+    top: 25%;
+    left: 0;
+  }
+}
 
 .carousel-control-next {
   /* right: -150px; */
   right: -10%;
+}
+@media (max-width: 992px) {
+  .carousel-control-next {
+    top: 25%;
+    right: 0;
+  }
 }
 
 .carousel-control-prev-icon,
@@ -245,6 +284,11 @@
   margin-top: 150px;
   /* высота header */
 }
+@media (max-width: 992px) {
+  .main {
+    margin-top: 48px;
+  }
+}
 
 section {
   margin: 30px 0;
@@ -259,8 +303,20 @@ section {
   /* background-attachment: fixed; */
   text-align: center;
 }
+@media (max-width: 992px) {
+  .section-title {
+    margin: 10px 0;
+    padding: 5px 0;
+  }
+}
 .section-title h1 {
   font: 300 40px/48px "Open Sans", "Arial", sans-serif;
+}
+@media (max-width: 992px) {
+  .section-title h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 
 #first {
@@ -337,6 +393,12 @@ section {
 #about .instagram .section-title h2 {
   font: 300 32px/48px "Open Sans", "Arial", sans-serif;
 }
+@media (max-width: 992px) {
+  #about .instagram .section-title h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 #about .instagram .instfeed {
   background: rgba(51, 51, 51, 0.5);
 }
@@ -351,19 +413,17 @@ section {
 }
 
 #reviews {
-  border: 1px solid #105316;
+  /* border: 1px solid rgb(16, 83, 22); */
   overflow: hidden;
 }
 #reviews .cards {
-  display: flex;
-  /* justify-content: center; */
-  justify-content: space-between;
   margin-top: 30px;
+  padding: 0 2px;
+  display: flex;
+  justify-content: space-between;
 }
-#reviews .card {
-  min-width: 300px;
-  max-width: 430px;
-  padding: 0;
+#reviews .card + .card {
+  margin-left: 5px;
 }
 #reviews .card .row {
   margin-left: auto;
@@ -383,9 +443,62 @@ section {
   border-radius: 50%;
 }
 
-#FAQ {
-  height: 400px;
-  border: 1px solid;
+.reviews-add {
+  /* border: 1px solid salmon; */
+  display: flex;
+  justify-content: flex-end;
+}
+.reviews-add .dropdown-toggle::after {
+  display: none;
+}
+.reviews-add .btn-check:focus + .btn,
+.reviews-add .btn:focus {
+  box-shadow: none;
+}
+.reviews-add button {
+  color: #cc0a3b;
+}
+.reviews-add button:hover {
+  color: #cc0a3b;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+.reviews-add .dropdown-menu {
+  background-color: #ededed;
+}
+.reviews-add .dropdown-menu .dropdown-item img {
+  margin-right: 5px;
+}
+.reviews-add .dropdown-menu .dropdown-item span:hover {
+  transition: 0.3s ease;
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.reviews-add .dropdown-menu .img-yandex {
+  fill: red;
+}
+
+#FAQ .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #cc0a3b;
+  background-color: rgba(153, 153, 153, 0.2);
+}
+#FAQ .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23cc0a3b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+#FAQ .accordion .accordion-item .accordion-button:hover {
+  cursor: default;
+}
+#FAQ .accordion .accordion-item .accordion-button:focus {
+  cursor: default;
+  border-color: #cc0a3b;
+  /* box-shadow: 0 0 0 0.25rem rgb(204 10 59 / 20%); */
+  box-shadow: 0 0 0 0.25rem rgba(251, 204, 1, 0.2);
+}
+
+@media (max-width: 992px) {
+  .container-md {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -485,6 +598,12 @@ body {
   /* высота header */
   height: 150px;
   visibility: hidden;
+}
+@media (max-width: 992px) {
+  .anchor::before {
+    margin-top: -55px;
+    height: 55px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,9 @@
 
 .main {
   margin-top: 150px; /* высота header */
+  @include for-size(lg_down) {
+    margin-top: 48px;
+  }
 }
 section {
   margin: 30px 0;
@@ -98,18 +101,18 @@ section {
   border: 1px solid rgb(29, 16, 18);
 }
 #reviews {
-  border: 1px solid rgb(16, 83, 22);
+  /* border: 1px solid rgb(16, 83, 22); */
   overflow: hidden;
   & .cards {
-    display: flex;
-    /* justify-content: center; */
-    justify-content: space-between;
     margin-top: 30px;
+    padding: 0 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .card + .card {
+    margin-left: 5px;
   }
   & .card {
-    min-width: 300px;
-    max-width: 430px;
-    padding: 0;
     & .row {
       margin-left: auto;
       margin-right: auto;
@@ -128,8 +131,65 @@ section {
   border: 1px solid $font-color-default;
   border-radius: 50%;
 }
+.reviews-add {
+  /* border: 1px solid salmon; */
+  display: flex;
+  justify-content: flex-end;
+
+  & .dropdown-toggle::after {
+    display: none;
+  }
+  & .btn-check:focus + .btn,
+  .btn:focus {
+    box-shadow: none;
+  }
+  & button {
+    color: $font-color-active-1;
+  }
+  & button:hover {
+    color: $font-color-active-1;
+    opacity: 0.8;
+    transition: 0.3s ease;
+  }
+  & .dropdown-menu {
+    background-color: $font-color-layer;
+
+    & .dropdown-item img {
+      margin-right: 5px;
+    }
+    & .dropdown-item span:hover {
+      transition: 0.3s ease;
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+    & .img-yandex {
+      fill: red;
+    }
+  }
+}
 
 #FAQ {
-  height: 400px;
-  border: 1px solid;
+  & .accordion {
+    & .accordion-item {
+      & .accordion-button:not(.collapsed) {
+        color: $font-color-active-1;
+        background-color: rgba(153, 153, 153, 0.2);
+      }
+
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23cc0a3b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      }
+
+      .accordion-button:hover {
+        cursor: default;
+      }
+      .accordion-button:focus {
+        cursor: default;
+        border-color: $font-color-active-1;
+
+        /* box-shadow: 0 0 0 0.25rem rgb(204 10 59 / 20%); */
+        box-shadow: 0 0 0 0.25rem rgb(251 204 1 / 20%);
+      }
+    }
+  }
 }

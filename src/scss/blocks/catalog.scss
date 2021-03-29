@@ -27,6 +27,9 @@
 }
 .carousel {
   /* border: 1px solid rgb(255, 0, 128); */
+  &-item {
+    text-align: center;
+  }
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -39,10 +42,18 @@
 .carousel-control-prev {
   /* left: -150px; */
   left: -10%;
+  @include for-size(lg_down) {
+    top: 25%;
+    left: 0;
+  }
 }
 .carousel-control-next {
   /* right: -150px; */
   right: -10%;
+  @include for-size(lg_down) {
+    top: 25%;
+    right: 0;
+  }
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

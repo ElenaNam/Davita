@@ -28,4 +28,8 @@ body {
   margin-top: -150px; /* высота header */
   height: 150px;
   visibility: hidden;
+  @include for-size(lg_down) {
+    margin-top: -55px;
+    height: 55px;
+  }
 }
