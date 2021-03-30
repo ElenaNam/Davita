@@ -49,4 +49,8 @@
 @mixin link {
   text-decoration: none;
   color: $font-color-default;
+  &:hover {
+    text-decoration: underline;
+    cursor: default;
+  }
 }

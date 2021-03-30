@@ -6,8 +6,12 @@ import bootstrap from "bootstrap";
 
 /* jQuery(function () {
   jQuery("body").css("color", "blue");
-}); */
+});  */
 console.log("davita");
+$(".carousel").carousel({
+  interval: 1000,
+  wrap: true,
+});
 
 
 

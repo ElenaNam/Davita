@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="DaVita-mebel - официальный поставщик в ТЦ 'Гудок'"
+    />
     <link href="assets/favicon/favicon.ico" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -16,45 +20,6 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="jquery.instagramFeed.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js"
-      integrity="sha512-/z6cDTmzplKFL9sRet94DsTK8ZdXIeIj4BZAVtjDKLG/DMl9lrQeOmVXMQrpb6KWwNNvqVAy+liFguc8jGOj6Q=="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      (function ($) {
-        $(window).on("load", function () {
-          $.instagramFeed({
-            /* username: "davita_mebelsamara", */
-            username: "kot_mukha",
-            container: "#instfeed",
-            display_profile: false,
-            display_biography: false,
-            display_gallery: true,
-            display_captions: true,
-            callback: null,
-            styling: true,
-            items: 100,
-            items_per_row: 5,
-            margin: 0.2,
-          });
-        });
-      })(jQuery);
-    </script>
 
     <link rel="stylesheet" href="src/style.css" type="text/css" />
     <title>DaVitamebel-samara</title>
@@ -78,7 +43,7 @@
 
             <a class="navbar-brand p-0" href="#first">
               <img
-                src="assets/images/logo-small.png"
+                src="assets/images/logo/logo_small.png"
                 width="44px"
                 height="auto"
                 alt="logo"
@@ -139,22 +104,82 @@
       <div class="header__bottom container-md">
         <a class="navbar-brand" href="#first">
           <img
-            src="assets/images/logo-long.png"
+            src="assets/images/logo/logo_long.png"
             width="280px"
             height="auto"
             alt="logo"
           />
         </a>
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          data-toggle="modal"
+          data-target="#phoneModal"
+        >
+          Уже хочу позвонить!
+        </button>
       </div>
     </header>
 
     <main class="main" role="main">
+      <div
+        class="modal fade"
+        id="phoneModal"
+        tabindex="-1"
+        aria-labelledby="phoneModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="phoneModalLabel">
+                Какой-то заголовок
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a class="phone_img">
+                    <img src="assets/icons/phone.png" alt="phone" />
+                    <span class="phone_text">8-964-987-16-44</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="" href="https://wa.me/79649871644" target="_blank">
+                    <img
+                      src="assets/icons/message-whatsapp.png"
+                      alt="whatsapp"
+                    />
+                    <span>WhatsApp</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class=""
+                    href="https://viber.click/79649871644"
+                    target="_blank"
+                  >
+                    <img src="assets/icons/message-viber.png" alt="viber" />
+                    <span>Viber</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+
       <section id="first" class="anchor container-fluid">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-ride="carousel"
-        >
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -208,7 +233,7 @@
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleControls"
+            href="#carouselControls"
             role="button"
             data-slide="prev"
           >
@@ -216,7 +241,7 @@
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleControls"
+            href="#carouselControls"
             role="button"
             data-slide="next"
           >
@@ -773,7 +798,7 @@
       </section>
     </main>
 
-    <!--     <footer id="contacts" class="anchor">
+    <footer id="contacts" class="anchor">
       <div class="container-md">
         <div class="col section-title">
           <h1>Контакты</h1>
@@ -821,7 +846,7 @@
       <div class="container-fluid footer-contacts__wrapper">
         <div class="contacts container-md">
           <div class="row">
-            <div class="col contacts-1">
+            <div class="contacts-1 col">
               <ul>
                 <li class="contacts-item__address">
                   <div class="address__img">
@@ -875,10 +900,43 @@
                 </li>
               </ul>
             </div>
-            <div class="col"></div>
-            <div class="col contacts-2">
+            <div class="contacts-form col">
+              <h3>Позвонить</h3>
+              <ul>
+                <li>
+                  <a class="phone_img">
+                    <img src="assets/icons/phone.png" alt="phone" />
+                    <span class="phone_text">8-964-987-16-44</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="" href="https://wa.me/79649871644" target="_blank">
+                    <img
+                      src="assets/icons/message-whatsapp.png"
+                      alt="whatsapp"
+                    />
+                    <span>WhatsApp</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class=""
+                    href="https://viber.click/79649871644"
+                    target="_blank"
+                  >
+                    <img src="assets/icons/message-viber.png" alt="viber" />
+                    <span>Viber</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts-2 col">
               <a class="" href="https://davitamebel.ru/" target="_blank">
-                <img src="assets/icons/davita.png" alt="davita" width="30px" />
+                <img
+                  src="assets/images/logo/logo_small.png"
+                  alt="davita"
+                  width="30px"
+                />
                 <span>Перейти на сайт davitamebel.ru</span>
               </a>
 
@@ -930,18 +988,49 @@
         <span>Самара</span>
         <span>2021</span>
       </div>
-    </footer> -->
+    </footer>
 
-    <!--     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script> -->
-    <!--     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
+
+    <!-- <script src="jquery.instagramFeed.min.js"></script> -->
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js"
+      integrity="sha512-/z6cDTmzplKFL9sRet94DsTK8ZdXIeIj4BZAVtjDKLG/DMl9lrQeOmVXMQrpb6KWwNNvqVAy+liFguc8jGOj6Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      (function ($) {
+        $(window).on("load", function () {
+          $.instagramFeed({
+            /* username: "davita_mebelsamara", */
+            username: "kot_mukha",
+            container: "#instfeed",
+            display_profile: false,
+            display_biography: false,
+            display_gallery: true,
+            display_captions: false,
+            callback: null,
+            styling: true,
+            items: 20,
+            items_per_row: 5,
+            margin: 0.2,
+          });
+        });
+      })(jQuery);
+    </script>
+
     <script src="js/index.js"></script>
   </body>
 </html>

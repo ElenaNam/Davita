@@ -18,8 +18,37 @@ section {
     @include section-title();
   }
 }
+
+.modal {
+  &-dialog {
+    margin-top: 20%;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+  &-content {
+    background: url("../assets/bg/wood.jpg");
+    background-size: cover;
+
+    & .close {
+      outline: none;
+      background: transparent;
+    }
+  }
+  &-body {
+    text-align: center;
+    font-size: 20px;
+    color: $font-color-default;
+    & ul li a {
+      margin-bottom: 7px;
+      @include link();
+    }
+  }
+}
+
 #first {
   overflow-x: hidden;
+
   & .carousel-control-prev {
     margin-left: 5%; /*перепроверить*/
   }
