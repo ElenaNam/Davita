@@ -349,16 +349,31 @@ section {
   cursor: default;
 }
 
-#first {
+.first {
+  width: 100%;
   overflow-x: hidden;
 }
-#first .carousel-control-prev {
+.first .carousel-control-prev {
   margin-left: 5%;
   /*перепроверить*/
 }
-#first .carousel-control-next {
+.first .carousel-control-next {
   margin-right: 5%;
   /*перепроверить*/
+}
+
+.benefit {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.benefit-item {
+  /* width: 150px; */
+  display: flex;
+}
+.benefit-item img {
+  border-radius: 7px;
 }
 
 #about .cards {
@@ -417,24 +432,51 @@ section {
   /* border: 1px solid orangered; */
 }
 #about .instagram .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
-  margin: 10px 0;
+  margin: 10px 0 30px;
+  padding: 0 5px;
 }
 #about .instagram .section-title h2 {
-  font: 300 32px/48px "Open Sans", "Arial", sans-serif;
-}
-@media (max-width: 992px) {
-  #about .instagram .section-title h2 {
-    font-size: 20px;
-    line-height: 30px;
-  }
+  /* @include h2(); */
+  color: #333;
+  display: inline-flex;
+  margin: 0 0 0 5px;
 }
 #about .instagram .instfeed {
-  background: rgba(51, 51, 51, 0.5);
+  /* background: $font-color-border; */
+  display: flex;
+}
+#about .instagram .instfeed .instagram_profile {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid lawngreen; */
+  width: 20%;
+  margin: 0 !important;
+}
+#about .instagram .instfeed .instagram_profile_image {
+  width: 80px;
+  border-radius: 50%;
 }
 #about .instagram .instfeed .instagram_gallery {
-  display: flex;
+  /* padding-left: 150px; */
+  width: 80%;
+  margin: 0 !important;
+  text-align: right;
+  /* display: flex;
+  flex-wrap: wrap; */
   /* justify-content: center; */
+}
+#about .instagram .instfeed .instagram_gallery img {
+  margin: 1px;
+  max-width: 125px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
 }
 
 #news {

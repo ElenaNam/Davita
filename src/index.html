@@ -178,9 +178,9 @@
         </div>
       </div>
 
-      <section id="first" class="anchor container-fluid">
+      <section id="first" class="anchor first">
         <div id="carouselControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
+          <div class="carousel-inner container-md">
             <div class="carousel-item active">
               <img
                 src="assets/images/promo/14d7a6c63a9f86dff64eabe555248ec6.jpg"
@@ -247,6 +247,23 @@
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
           </a>
+        </div>
+        <div class="benefit container-md">
+          <div class="benefit-item">
+            <img src="assets/images/benefit/item1.webp" alt="discounts" />
+          </div>
+          <div class="benefit-item">
+            <img src="assets/images/benefit/item2.webp" alt="credit" />
+          </div>
+          <div class="benefit-item">
+            <img src="assets/images/benefit/item3.webp" alt="warranty" />
+          </div>
+          <div class="benefit-item">
+            <img
+              src="assets/images/benefit/item4.webp"
+              alt="free design project"
+            />
+          </div>
         </div>
       </section>
 
@@ -378,7 +395,13 @@
         </div>
         <div class="instagram">
           <div class="section-title">
-            <h2>Мы в Инстаграм</h2>
+            <img
+              src="assets/icons/insta.png"
+              alt="instagram"
+              width="30px"
+              height="30px"
+            />
+            <h2>Наш Инстаграм</h2>
           </div>
           <div id="instfeed" class="instfeed"></div>
         </div>
@@ -1093,15 +1116,15 @@
             username: "davita_mebelsamara",
             /* username: "kot_mukha", */
             container: "#instfeed",
-            display_profile: false,
+            display_profile: true,
             display_biography: false,
             display_gallery: true,
             display_captions: false,
             callback: null,
-            styling: true,
-            items: 10,
-            items_per_row: 10,
-            margin: 0.2,
+            styling: false,
+            items: 8,
+            items_per_row: 8,
+            /* margin: 2, */
           });
         });
       })(jQuery);
