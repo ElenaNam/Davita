@@ -1,5 +1,9 @@
 @mixin for-size($size) {
-  @if $size==sm {
+  @if $size==400 {
+    @media (min-width: 400px) {
+      @content;
+    }
+  } @else if $size==sm {
     @media (min-width: 575px) {
       @content;
     }
@@ -19,23 +23,25 @@
     @media (min-width: 1400px) {
       @content;
     }
+  } @else if $size==land {
+    @media (max-width: 768px) and (orientation: landscape) {
+      @content;
+    }
   } @else if $size==lg_down {
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       @content;
     }
   } @else if $size==xl_down {
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  } @else if $size==md_down {
+    @media (max-width: 767px) {
       @content;
     }
   } @else if $size==sm_down {
     @media (max-width: 575px) {
       @content;
     }
-  }
-}
-
-.container-md {
-  @include for-size(lg_down) {
-    max-width: 100%;
   }
 }

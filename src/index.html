@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DaVita Самара - кухни и вся мебель для дома за 3 дня</title>
     <meta
       name="description"
       content="Мебель DaVita - кухни, гостиные, детские, спальные гарнитуры и офисная мебель со склада в Самаре по ценам фабрики Витра"
+    />
+    <meta
+      name="keywords"
+      content="мебель, davita, давита, мебель в самаре купить, гудок мебель"
     />
     <link href="assets/favicon/favicon.ico" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,21 +20,69 @@
     />
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="src/style.css" type="text/css" />
-    <title>DaVitamebel-samara</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(75693406, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/75693406"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
-  <body>
-    <header class="header fixed-top">
+  <body>    
+    <!-- Шапка -->
+
+    <header id="header" class="header fixed-top">
       <div class="header__top-wrapper">
         <div class="header__top container-md px-0">
           <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
             <button
+              id="btnCollapseToggler"
               class="navbar-toggler custom-toggler"
               type="button"
               data-toggle="collapse"
@@ -44,29 +97,32 @@
             <a class="navbar-brand p-0" href="#first">
               <img
                 src="assets/images/logo/logo_small.png"
-                width="44px"
-                height="auto"
+                width="45px"
+                height="36px"
                 alt="logo"
               />
             </a>
 
-            <div class="header__top-left navbar-text col-md-1 col-lg-3">
+            <div class="header__top-left navbar-text col-lg-3">
               <a
                 class="nav-link pl-0 text-left"
                 target="_blank"
+                rel="nofollow"
                 href="https://yandex.ru/maps/51/samara/?display-text=DaVita&ll=50.129954%2C53.187692&mode=search&sctx=ZAAAAAgBEAAaKAoSCfYksDkHDUlAEQiQoWMHmUpAEhIJS2z9%2F3990T8RBbsHR1XDuz8oCjgAQJudBkgBVc3MzD5YAGJFcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9BZHZlcnRzL05vdFNob3dPbkhhcmRSdWJyaWNGZWF0dXJlL0VuYWJsZT10cnVlagJydXAAnQHNzEw9oAEAqAEAvQHfQIBL6gEA8gEA%2BAEAggIZKChjaGFpbl9pZDooNDM4MjEzODI0MCkpKYoCAA%3D%3D&sll=50.129954%2C53.187692&sspn=0.025889%2C0.010276&text=%7B%22text%22%3A%22DaVita%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%224382138240%22%5D%7D%5D%7D&whatshere%5Bpoint%5D=50.128198%2C53.187341&whatshere%5Bzoom%5D=15.4&z=15.4"
               >
-                <img src="assets/icons/address.png" alt="address" />
+                
+                <img src="assets/icons/address.png" alt="address" /> 
                 <span>Самара, ТЦ "Гудок"</span>
               </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="header__top-center navbar-nav mx-auto mb-2 mb-lg-0">
+            <div
+              class="collapse navbar-collapse flex-grow-1 justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="header__top-center navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#about"
-                    >О нас</a
-                  >
+                  <a class="nav-link" href="#about">О нас</a>
                 </li>
 
                 <li class="nav-item">
@@ -93,8 +149,9 @@
 
             <div class="header__top-right navbar-text col-md-1 col-lg-3">
               <a class="nav-link pr-0 text-right" href="tel:+79649871644">
-                <img src="assets/icons/tel.png" alt="phone" />
-                <span>+7 (964) 98-71-644</span>
+                <!-- <img src="assets/icons/tel.png" alt="phone" /> -->
+                <img src="assets/icons/t.png" alt="phone" />
+                <span>+7 (964) 987-16-44</span>
               </a>
             </div>
           </nav>
@@ -108,20 +165,120 @@
             width="280px"
             height="auto"
             alt="logo"
+            title="DaVita"
           />
         </a>
+
+        <img src="assets/images/logo/slogan.png" alt="slogan" class="slogan" />
+
+        <a
+          href="https://www.instagram.com/davita_mebelsamara/"
+          target="_blank"
+          rel="nofollow"
+          class="header-insta"
+        >
+          <img
+            src="assets/icons/insta.png"
+            alt="instagram"
+            width="30px"
+            height="30px"
+          />
+          <!-- <span>Инстаграм</span> -->
+        </a>
+
         <button
           type="button"
-          class="btn btn-outline-danger"
+          class="btn btn-invite"
           data-toggle="modal"
           data-target="#phoneModal"
         >
-          Уже хочу позвонить!
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.8001 24.0319C17.6001 23.5319 16.0001 23.1319 14.7001 22.3319C9.40005 19.1319 4.90005 14.6319 1.60005 9.33194L1.30005 8.73194C-0.899947 3.93194 -0.299947 3.53194 3.30005 0.631941C4.50005 -0.368059 5.30005 -0.168059 6.20005 1.13194C7.00005 2.23194 7.70005 3.43194 8.50005 4.53194C9.40005 5.73194 9.50005 6.83194 8.60005 8.03194C7.70005 9.13194 7.90005 10.1319 8.90005 11.0319C10.5001 12.5319 12.0001 14.0319 13.6001 15.6319C14.1001 16.1319 14.7001 16.3319 15.4001 15.8319C17.0001 14.5319 18.6001 14.6319 20.2001 16.0319C21.1001 16.8319 22.2001 17.4319 23.3001 18.1319C24.1001 18.6319 24.3001 19.5319 23.8001 20.1319C22.7001 21.4319 21.6001 22.6319 20.4001 23.8319C20.1001 23.9319 19.6001 23.8319 18.8001 24.0319ZM19.0001 23.0319C19.5001 22.8319 20.0001 22.7319 20.4001 22.4319C21.1001 21.7319 21.8001 20.9319 22.5001 20.2319C23.1001 19.5319 22.9001 19.0319 22.2001 18.6319C21.4001 18.2319 20.7001 17.7319 20.0001 17.1319C18.5001 15.8319 17.1001 15.6319 15.5001 16.9319C14.8001 17.5319 14.1001 17.4319 13.5001 16.8319C11.7001 15.1319 9.80005 13.4319 8.10005 11.6319C6.40005 9.83194 6.50005 9.73194 7.60005 7.63194C7.90005 7.13194 8.10005 6.23194 7.90005 5.83194C7.10005 4.43194 6.20005 3.13194 5.30005 1.83194L4.70005 1.53194H4.10005C1.10005 3.23194 0.600053 4.73194 2.10005 7.83194C2.20005 8.13194 2.40005 8.53194 2.60005 8.83194C5.80005 14.0319 10.2001 18.3319 15.4001 21.5319C16.4001 22.1319 17.7001 22.4319 19.0001 23.0319Z"
+              fill="#746C61"
+            />
+          </svg>
+
+          ПРИГЛАСИТЬ НА ЗАМЕР
         </button>
       </div>
     </header>
 
+    <!-- Плавающая кнопка справа сбоку страницы -->
+
+    <aside class="aside">
+      <div class="float-block">
+        <button
+          class="float-block-title"
+          type="button"
+          data-toggle="collapse"
+          data-target="#floatBlockCard"
+          aria-expanded="false"
+          aria-controls="floatBlockCard"
+        >
+          <span class="float-block-title-inner">Уже хочу спросить!</span>
+          <span class="float-block-title-inner-small">?</span>
+          <img
+            class="float-block-title-inner-img"
+            src="assets/icons/ding.gif"
+            alt="messengers"
+          />
+        </button>
+        <button
+          type="button"
+          class="float-block-close hide"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span id="btnCloseInner" aria-hidden="true">&times;</span>
+        </button>
+        <div class="collapse small float-block-collapse" id="floatBlockCard">
+          <div class="card card-body">
+            <ul class="float-block-list">
+              <li>
+                <a class="phone" href="tel:+79649871644">
+                    <img src="assets/icons/phone.png" alt="phone" />
+                    <span class="phone_text">Позвонить</span>                          
+                </a>
+              </li>
+              <li>
+                <a
+                  class="telegram"
+                  href="https://tlgg.ru/@DaVita_Samara"
+                  target="_blank"
+                >
+                  <img src="assets/icons/message-teleg.png" alt="telegram" />
+                  <span>Telegram</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/79649871644" target="_blank">
+                  <img src="assets/icons/message-whatsapp.png" alt="whatsapp" />
+                  <span>WhatsApp</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://viber.click/79649871644" target="_blank">
+                  <img src="assets/icons/message-viber.png" alt="viber" />
+                  <span>Viber</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- основная страница -->
     <main class="main" role="main">
+      <!-- Модальное окно Позвонить замерщику -->
+
       <div
         class="modal fade"
         id="phoneModal"
@@ -133,7 +290,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="phoneModalLabel">
-                Какой-то заголовок
+                Позвонить замерщику
               </h5>
               <button
                 type="button"
@@ -147,685 +304,692 @@
             <div class="modal-body">
               <ul>
                 <li>
-                  <a class="phone_img">
+                  <a class="phone_img" href="tel:+79277769678">
                     <img src="assets/icons/phone.png" alt="phone" />
-                    <span class="phone_text">8-964-987-16-44</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="https://wa.me/79649871644" target="_blank">
-                    <img
-                      src="assets/icons/message-whatsapp.png"
-                      alt="whatsapp"
-                    />
-                    <span>WhatsApp</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class=""
-                    href="https://viber.click/79649871644"
-                    target="_blank"
-                  >
-                    <img src="assets/icons/message-viber.png" alt="viber" />
-                    <span>Viber</span>
+                    <span class="phone_text">+7 (927) 776-96-78</span>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="modal-footer"></div>
           </div>
         </div>
       </div>
 
+      <!-- Слайдер баннеров -->
+
       <section id="first" class="anchor first">
-        <div id="carouselControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner container-md">
-            <div class="carousel-item active">
-              <img
-                src="assets/images/promo/14d7a6c63a9f86dff64eabe555248ec6.jpg"
-                class="d-block w-100"
-                alt="promo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/promo/91f8fc42be299be7beb5a650169c752b.jpg"
-                class="d-block w-100"
-                alt="promo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/promo/af23d59d424fe2fd548a422a1dabd93f.jpg"
-                class="d-block w-100"
-                alt="promo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/promo/bafade60a873786cdd63d9f9330c019a.jpg"
-                class="d-block w-100"
-                alt="promo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/promo/c3a3430ab58885aaab4fb78e5f0562a7.jpg"
-                class="d-block w-100"
-                alt="promo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/promo/f48b3739683b38fe9c765dceaa380110.jpg"
-                class="d-block w-100"
-                alt="promo"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/promo/xcf156cb0f5fe7253323875986ba31cad.jpg"
-                class="d-block w-100"
-                alt="promo"
-              />
-            </div>
+        <div class="first-slider-wrapper">
+          <div class="container-md">
+            <div class="first-slider"></div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselControls"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselControls"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
         </div>
-        <div class="benefit container-md">
-          <div class="benefit-item">
-            <img src="assets/images/benefit/item1.webp" alt="discounts" />
-          </div>
-          <div class="benefit-item">
-            <img src="assets/images/benefit/item2.webp" alt="credit" />
-          </div>
-          <div class="benefit-item">
-            <img src="assets/images/benefit/item3.webp" alt="warranty" />
-          </div>
-          <div class="benefit-item">
-            <img
-              src="assets/images/benefit/item4.webp"
-              alt="free design project"
-            />
+
+        <div class="container-md">
+          <div class="benefit">
+            <div class="benefit-item">
+              <img src="assets/images/benefit/item1.webp" alt="discounts" />
+            </div>
+            <div class="benefit-item">
+              <img src="assets/images/benefit/item2.webp" alt="credit" />
+            </div>
+            <div class="benefit-item">
+              <img src="assets/images/benefit/item3.webp" alt="warranty" />
+            </div>
+            <div class="benefit-item">
+              <img
+                src="assets/images/benefit/item4.webp"
+                alt="free design project"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="anchor container-md">
-        <div class="section-title">
-          <h1>О нас</h1>
-        </div>
-        <div class="cards">
-          <div class="row gx-0 justify-content-between">
-            <div class="card col-md-3">
-              <img
-                src="assets/icons/about-1.svg"
-                class="card-img-top"
-                alt="3D-planner"
-              />
-              <div class="card-body">
-                <h4>3D-планировщик</h4>
-                <p class="card-text">
-                  Кто сказал, что дизайн-проект - это дорого? Для Вас -
-                  бесплатно с нашей 3D-программой.
-                </p>
-              </div>
-            </div>
+      <!-- О нас -->
 
-            <div class="card col-md-3">
-              <img
-                src="assets/icons/about-2.svg"
-                class="card-img-top"
-                alt="warranty"
-              />
-              <div class="card-body">
-                <h4>Гарантия</h4>
-                <p class="card-text">
-                  Дарим Вам вместе с покупкой мебели уверенность - гарантию до 8
-                  лет.
-                </p>
-              </div>
-            </div>
-
-            <div class="card col-md-3">
-              <img
-                src="assets/icons/about-3.svg"
-                class="card-img-top"
-                alt="prices"
-              />
-              <div class="card-body">
-                <h4>Цены от производителя</h4>
-                <p class="card-text">
-                  Ищете лучшую цену? Предлагаем Вам цены напрямую от
-                  производителя на нашем сайте.
-                </p>
-              </div>
-            </div>
-
-            <div class="card col-md-3">
-              <img
-                src="assets/icons/taxi.svg"
-                class="card-img-top"
-                alt="taxi"
-              />
-              <div class="card-body">
-                <h4>Такси для Вас</h4>
-                <p class="card-text">
-                  Позвоните нам и скажите "Хочу такси", мы договоримся об
-                  удобном времени и пришлём к Вам Яндекс-такси.
-                </p>
-              </div>
-            </div>
-
-            <div class="card col-md-3 g-4">
-              <img
-                src="assets/icons/about-5.webp"
-                class="card-img-top"
-                alt="ecology"
-              />
-              <div class="card-body">
-                <h4>Экологичность</h4>
-                <p class="card-text">
-                  Покупая нашу мебель, Вы получаете безопасность и экологичность
-                  совершенно бесплатно.
-                </p>
-              </div>
-            </div>
-
-            <div class="card col-md-3 g-4">
-              <img
-                src="assets/icons/about-6.svg"
-                class="card-img-top"
-                alt="assortment"
-              />
-              <div class="card-body">
-                <h4>Ассортимент</h4>
-                <p class="card-text">
-                  Большие планы на будущее? В нашем ассортименте - мебель во все
-                  комнаты Вашего уютного дома.
-                </p>
-              </div>
-            </div>
-
-            <div class="card col-md-3 g-4">
-              <img
-                src="assets/icons/about-7.svg"
-                class="card-img-top"
-                alt="modular-furniture"
-              />
-              <div class="card-body">
-                <h4>Модульная мебель</h4>
-                <p class="card-text">
-                  Составление идеального интерьера отнимает много времени?
-                  Модульные решения - для Вас!
-                </p>
-              </div>
-            </div>
-
-            <div class="card col-md-3 g-4">
-              <img
-                src="assets/icons/about-8.svg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h4>Что-то еще</h4>
-                <p class="card-text">
-                  Какое-то еще преимущество, которое занимает три строчки.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="instagram">
+      <section id="about" class="anchor about">
+        <div class="container-md">
           <div class="section-title">
-            <img
-              src="assets/icons/insta.png"
-              alt="instagram"
-              width="30px"
-              height="30px"
-            />
-            <h2>Наш Инстаграм</h2>
-          </div>
-          <div id="instfeed" class="instfeed"></div>
-        </div>
-      </section>
-
-      <section id="news" class="anchor container-md">
-        <div class="section-title">
-          <h1>Новости</h1>
-        </div>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
-
-      <section id="catalog" class="anchor container-md px-0">
-        <div class="section-title">
-          <h1>Каталог</h1>
-        </div>
-        <div class="category">
-          <ul class="nav justify-content-evenly">
-            <li class="nav-item">
-              <a class="nav-link active-link" href="#!">Кухни</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Прихожие</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Спальни</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Детские</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Другое</a>
-            </li>
-          </ul>
-        </div>
-        <div class="carousel">
-          <div
-            id="carouselExampleFade"
-            class="carousel slide carousel-fade"
-            data-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row justify-content-between">
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/iblock/de3/520_390_2/xde3c5c92ad34aed6b3ed2a328ec53979.jpg,q1594029482.pagespeed.ic.83cujQaa4r.webp"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Тиффани</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/iblock/f61/520_390_2/xf61f4b385493413a3c906169afb81fab.jpg,q1611827321.pagespeed.ic.1XGZZKvuRM.webp"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Палермо</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/iblock/413/413282eed97416dd09ef67857d061119.jpg?1615521402"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Графит</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row justify-content-between">
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/product/275_206_1/3cc43203-6bac-11e8-8e06-00155d001e1b_IM-00000426_Avrora%2018.1%20(shirina%20240kh190%20sm)/photo_1_IM-00000426_Avrora%2018.1%20(shirina%20240kh190%20sm)Kukhonnyy%20garnitur%20uglovoy.jpg?1592313567"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Аврора</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/product/275_206_1/115515ee-24b6-11eb-932e-00155d000b01_IM-00000985_Bruklin%201%20(shirina%20360kh192%20sm)/photo_1_IM-00000985_Bruklin%201%20(shirina%20360kh192%20sm)Kukhonnyy%20garnitur%20uglovoy.jpg?1606395794"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Бруклин</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/product/275_206_1/f5e8d191-dd9f-11e8-9c6f-00155d00bb06_IM-00000505_SHarlotta%202%20(shirina%20240kh180%20sm)/photo_1_IM-00000505_SHarlotta%202%20(shirina%20240kh180%20sm)Kukhonnyy%20garnitur%20uglovoy.jpg?1611579728"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Шарлотта</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row justify-content-between">
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/product/275_206_1/2c43254e-bfcd-11e8-be2a-00155d001e1b_IM-00000470_Oliviya%2037%20(shirina%20150kh200%20sm)/photo_1_IM-00000470_Oliviya%2037%20(shirina%20150kh200%20sm)Kukhonnyy%20garnitur%20uglovoy.jpg?1605013360"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Оливия крем</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/product/275_206_1/a399da66-2544-11e9-867c-00155d00bb06_IM-00000575_Oliviya%2056%20(shirina%20200kh150%20sm)/photo_1_IM-00000575_Oliviya%2056%20(shirina%20200kh150%20sm)Kukhonnyy%20garnitur%20uglovoy.jpg?1605013526"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Оливия грин</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card w-100">
-                      <img
-                        src="https://davitamebel.ru/upload/resize_cache/product/275_206_1/930a0251-69c2-11eb-81b1-00155d001f02_IM-00001097_Milana%2019.1%20(shirina%20240%20sm)/photo_1_IM-00001097_Milana%2019.1%20(shirina%20240%20sm)Kukhonnyy%20garnitur.jpg?1612789598"
-                        alt=""
-                        class="card-img-top"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Милана</h5>
-                        <p class="card-text">Описание</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleFade"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleFade"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="reviews" class="anchor container-md">
-        <div class="col section-title">
-          <h1>Отзывы</h1>
-        </div>
-        <div class="cards">
-          <div class="card mb-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="row g-0">
-              <div class="col-md-4 img-wrapper">
-                <!--                 <img
-                  src="./assets/images/Avatar1.png"
-                  alt="client1"
-                  class="reviews-img"
-                /> -->
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <!--                   <h5 class="card-title">Покупатель</h5>
-                  <p class="card-text">Мы ждем отзыв!</p>
-                  <p class="card-text">
-                    <small class="text-muted"></small>
-                  </p> -->
-                </div>
-              </div>
-            </div>
+            <h1>О нас</h1>
           </div>
 
-          <div class="card mb-3 col-lg-3 col-md-3 col-sm-6 col-12">
-            <div class="row g-0">
-              <div class="col-md-4 img-wrapper">
-                <img
-                  src="./assets/images/Avatar3.png"
-                  alt="client2"
-                  class="reviews-img"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Покупатель</h5>
-                  <p class="card-text">Мы ждем отзыв!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="row g-0">
-              <div class="col-md-4 img-wrapper">
-                <img
-                  src="./assets/images/Avatar2.png"
-                  alt="client3"
-                  class="reviews-img"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Покупатель</h5>
-                  <p class="card-text">Мы ждем отзыв!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="reviews-add">
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Оставить отзыв
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a
-                  class="dropdown-item"
-                  target="_blank"
-                  href="https://2gis.ru/samara/firm/70000001034625910/tab/reviews?m=50.120715%2C53.187058%2F16"
-                >
-                  <img src="assets/icons/2gis.png" alt="2GIS" width="15px" />
-                  <span>2GIS</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  target="_blank"
-                  href="https://yandex.ru/maps/org/davita/35790620555/?from=tabbar&ll=50.128122%2C53.186663&source=serp_navig&z=17.76"
-                >
+          <!-- Карточки с преимуществами -->
+
+          <div class="cards">
+            <div class="row justify-content-center">
+              <div class="about-slider">
+                <div class="card">
                   <img
-                    class="img-yandex"
-                    src="assets/icons/yandexMap.svg"
-                    alt="Yandex.Maps"
-                    width="15px"
+                    src="assets/images/about/about-1.svg"
+                    class="card-img-top"
+                    alt="3D-planner"
                   />
-                  <span>Яндекс.Карты</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  target="_blank"
-                  href="https://www.google.ru/maps/place/DaVita+%D0%BC%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C/@53.1907375,50.1259317,14.32z/data=!4m5!3m4!1s0x0:0xbde9c98453bb7e96!8m2!3d53.1866829!4d50.1268494?hl=ru&shorturl=1"
-                >
+                  <div class="card-body">
+                    <h4>3D-планировщик</h4>
+                    <p class="card-text">
+                      Кто сказал, что дизайн-проект - это дорого? Для Вас -
+                      бесплатно с нашей 3D-программой.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
                   <img
-                    src="assets/icons/gmaps.png"
-                    alt="Google.Maps"
-                    width="15px"
+                    src="assets/images/about/about-2.svg"
+                    class="card-img-top"
+                    alt="warranty"
                   />
-                  <span>Google.Maps</span>
-                </a>
-              </li>
-            </ul>
+                  <div class="card-body">
+                    <h4>Гарантия</h4>
+                    <p class="card-text">
+                      Дарим Вам вместе с покупкой мебели уверенность - гарантию
+                      до 8 лет.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="assets/images/about/about-3.svg"
+                    class="card-img-top"
+                    alt="prices"
+                  />
+                  <div class="card-body">
+                    <h4>Цены от производителя</h4>
+                    <p class="card-text">
+                      Ищете лучшую цену? Предлагаем Вам цены напрямую от
+                      производителя на нашем сайте.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="assets/images/about/about-4.svg"
+                    class="card-img-top"
+                    alt="taxi"
+                  />
+                  <div class="card-body">
+                    <h4>Такси для Вас</h4>
+                    <p class="card-text">
+                      Позвоните нам и скажите "Хочу такси", мы договоримся об
+                      удобном времени и пришлём к Вам Яндекс-такси.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="assets/images/about/about-5.png"
+                    class="card-img-top"
+                    alt="ecology"
+                  />
+                  <div class="card-body">
+                    <h4>Экологичность</h4>
+                    <p class="card-text">
+                      Покупая нашу мебель, Вы получаете безопасность и
+                      экологичность совершенно бесплатно.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="assets/images/about/about-6.svg"
+                    class="card-img-top"
+                    alt="assortment"
+                  />
+                  <div class="card-body">
+                    <h4>Ассортимент</h4>
+                    <p class="card-text">
+                      Большие планы на будущее? В нашем ассортименте - мебель во
+                      все комнаты Вашего уютного дома.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="assets/images/about/about-7.svg"
+                    class="card-img-top"
+                    alt="modular-furniture"
+                  />
+                  <div class="card-body">
+                    <h4>Модульная мебель</h4>
+                    <p class="card-text">
+                      Составление идеального интерьера отнимает много времени?
+                      Модульные решения - для Вас!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="assets/images/about/about-8.svg"
+                    class="card-img-top"
+                    alt="warehouse"
+                  />
+                  <div class="card-body">
+                    <h4>Склад в Самаре</h4>
+                    <p class="card-text">
+                      Постоянное наличие полного ассортимента продукции фабрики.
+                      Поставим Вам мебель за 1-3 дня!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Инстаграм -->
+
+          <div class="instagram">
+            <div class="section-title">
+              <a
+                href="https://www.instagram.com/davita_mebelsamara/"
+                target="_blank"
+                rel="nofollow"
+                class="header-insta"
+              >
+                <img
+                  src="assets/icons/insta.png"
+                  alt="instagram"
+                  width="25px"
+                  height="25px"
+                />
+                <h2>Наш Инстаграм - про мебель и про жизнь</h2>
+              </a>
+            </div>
+            <div id="instfeed" class="instfeed"></div>
           </div>
         </div>
       </section>
 
-      <section id="FAQ" class="anchor container-md">
-        <div class="col section-title">
-          <h1>Вопрос - Ответ</h1>
+      <!-- Новости -->
+
+      <section id="news" class="anchor news">
+        <div class="container-md">
+          <div class="section-title">
+            <h1>Новости</h1>
+          </div>
+          <div class="news-cards">
+            <!-- Новость 1 -->
+            <div class="card col-md-12">
+              <div class="row g-0 justify-content-lg-between">
+                <div class="img-wrapper col-md-3 col-lg-12 col-xl-5">
+                  <img src="assets/images/news/50.png" alt="news-img" />
+                </div>
+                <div class="col-md-9 col-lg-12 col-xl-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Скидки продлены</h5>
+                    <p class="card-text">
+                      В мае увеличенную 40% скидку фабрика дала на кухни Тиффани, Графит, Виктория и Шарлотта а также на спальню Тиффани; гостиные и прихожие - Тиффани и Фреска; детскую серию Эверест. На все остальные кухни также идёт весомая 30-% скидка.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">30 апреля</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Новость 2 -->
+            <div class="card col-md-12">
+              <div class="row g-0 justify-content-lg-between">
+                <div class="img-wrapper col-md-3 col-lg-12 col-xl-5">
+                  <img src="assets/images/news/byanka.png" alt="news-img" />
+                </div>
+                <div class="col-md-9 col-lg-12 col-xl-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Новая кухня</h5>
+                    <p class="card-text">
+                      Очередная новинка – кухня Бьянка. Белый цвет с
+                      геометрическим рисунком в духе минимализма – в общем, идём
+                      в ногу со временем! Данная кухонная серия уже имеется на
+                      складе в Самаре.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">1 марта</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Новость 3 -->
+            <div class="card col-md-12">
+              <div class="row g-0 justify-content-lg-between">
+                <div class="img-wrapper col-md-3 col-lg-12 col-xl-5">
+                  <img src="assets/images/news/grafit.png" alt="news-img" />
+                </div>
+                <div class="col-md-9 col-lg-12 col-xl-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Обновление в салоне</h5>
+                    <p class="card-text">
+                      Обновили выставку, теперь у нас в салоне появились свежие
+                      кухни в современном стиле – Графит и Бруклин. Графит
+                      больше для девочек, а Бруклин – суровым мужикам!
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">14 февраля</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Новость 4 -->
+            <div class="card col-md-12">
+              <div
+                class="row g-0 justify-content-md-center justify-content-lg-between"
+              >
+                <div class="img-wrapper col-md-3 col-lg-12 col-xl-5">
+                  <img src="assets/images/news/tinkoff.png" alt="news-img" />
+                </div>
+                <div class="col-md-9 col-lg-12 col-xl-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Можно и в кредит</h5>
+                    <p class="card-text">
+                      Подписали договор о сотрудничестве Тиньков Кредит-Брокер.
+                      Через них можно подать заявку на кредит или рассрочку в 5
+                      банков разом. Можете оформить кухню в кредит прямо в
+                      салоне в ТК Гудок
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">11 декабря</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Каталог -->
+
+      <section id="catalog" class="anchor catalog">
+        <div class="catalog-wrapper">
+          <div class="container-md">
+            <div class="section-title">
+              <h1>Каталог</h1>
+            </div>
+          </div>
+
+          <div class="container-md">
+            <div class="category">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <ul class="nav justify-content-between">
+                    <li class="nav-item">
+                      <button class="category-btn">Кухни</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="category-btn">Прихожие</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="category-btn">Спальни</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="category-btn">Детские</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="category-btn">Гостиные</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="category-btn">Офис</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-slider-wrapper">
+            <div class="container-md">
+              <div class="catalog-slider"></div>
+            </div>
+          </div>
+
+          <div class="catalog-btn-wrapper">
+            
+            <img src="assets/icons/up.png" alt="arrow-up">
+            <span>Посмотреть цены и характеристики на сайте ДаВита</span>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Отзывы -->
+
+      <section id="reviews" class="anchor reviews">
+        <div class="container-md">
+          <div class="col section-title">
+            <h1>Отзывы</h1>
+          </div>
         </div>
 
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Как устроена система цен на мебель ДаВита?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Как официальный дилер фабрики со статусом партнёрства
-                «Бренд-секция» по договору мы ни на рубль не можем отклоняться
-                ни в большую, ни в меньшую сторону от цен с официального сайта
-                производителя. Поэтому цены во всех бренд-секциях — одинаковые.
-                Также мы не можем давать от себя скидку, не предусмотренную
-                акционной программой фабрики. В нашей компетенции —
-                предоставлять скидку только на наши услуги: доставка, подъём на
-                этаж, сборку и прочий дополнительный сервис. Кроме бренд-секций
-                у фабрики есть обычные дилеры. Их цены уже не привязаны столь
-                жестко к ценам на сайте фабрики. Однако Витра предоставляет
-                таким партнёром меньшую скидку и цены в таких магазинах обычно
-                выше чем в бренд-секциях.
+        <div class="reviews-slider-wrapper">
+          <div class="reviews-slider-content">
+            <div class="container-md">    
+              <div class="reviews-slider">
+     
+                <div>
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/ja6Ru9u31Kg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+  
+                <div>
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/n3YYTosFPiY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>     
+        
+                <div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/GLyz8KU62hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>    
+         
+                <div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/x1NRqQOtwNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>     
+        
+                <div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/rpSusZtxxd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>   
               </div>
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
+        </div>
+
+        <div class="container-md">
+          <div class="reviews-add">
+            <div class="btn-group dropup">
               <button
-                class="accordion-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
-                aria-controls="collapseOne"
               >
-                Если интересующая меня кухня продаётся в этом месяце со скидкой,
-                то могу ли я оплатить её сейчас, а забрать в следующем месяце,
-                когда закончится ремонт?
+                Оставить отзыв
               </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Да, можно — мы рады помочь сэкономить Вам ваши деньги.
-              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://2gis.ru/samara/firm/70000001034625910/tab/reviews?m=50.120715%2C53.187058%2F16"
+                  >
+                    <img src="assets/icons/2gis.png" alt="2GIS" width="15px" />
+                    <span>2GIS</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://yandex.ru/maps/org/davita/35790620555/?from=tabbar&ll=50.128122%2C53.186663&source=serp_navig&z=17.76"
+                  >
+                    <img
+                      class="img-yandex"
+                      src="assets/icons/yandexMap.svg"
+                      alt="Yandex.Maps"
+                      width="15px"
+                    />
+                    <span>Яндекс.Карты</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://www.google.ru/maps/place/DaVita+%D0%BC%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C/@53.1907375,50.1259317,14.32z/data=!4m5!3m4!1s0x0:0xbde9c98453bb7e96!8m2!3d53.1866829!4d50.1268494?hl=ru&shorturl=1"
+                  >
+                    <img
+                      src="assets/icons/gmaps.png"
+                      alt="Google.Maps"
+                      width="15px"
+                    />
+                    <span>Google.Maps</span>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>          
+        </div>
+
+
+        </div>
+      </section>
+
+      <!-- Вопрос-Ответ -->
+
+      <section id="FAQ" class="anchor faq">
+        <div class="container-md">
+          <div class="col section-title">
+            <h1>Вопрос - Ответ</h1>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Как устроена система цен на мебель ДаВита?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
               >
-                Вопрос #3
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Равным образом рамки и место обучения кадров влечет за собой
-                процесс внедрения и модернизации системы обучения кадров,
-                соответствует насущным потребностям. Таким образом реализация
-                намеченных плановых заданий позволяет оценить значение новых
-                предложений.
+                <div class="accordion-body">
+                  Как официальный дилер фабрики со статусом партнёрства
+                  «Бренд-секция» по договору мы ни на рубль не можем отклоняться
+                  ни в большую, ни в меньшую сторону от цен с официального сайта
+                  производителя. Поэтому цены во всех бренд-секциях —
+                  одинаковые. Также мы не можем давать от себя скидку, не
+                  предусмотренную акционной программой фабрики. В нашей
+                  компетенции — предоставлять скидку только на наши услуги:
+                  доставка, подъём на этаж, сборку и прочий дополнительный
+                  сервис. Кроме бренд-секций у фабрики есть обычные дилеры. Их
+                  цены уже не привязаны столь жестко к ценам на сайте фабрики.
+                  Однако Витра предоставляет таким партнёром меньшую скидку и
+                  цены в таких магазинах обычно выше чем в бренд-секциях.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Если интересующая меня кухня продаётся в этом месяце со
+                  скидкой, то могу ли я оплатить её сейчас, а забрать в
+                  следующем месяце, когда закончится ремонт?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Да, можно — мы рады помочь сэкономить Вам ваши деньги.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Как устроена система скидок на мебельной фабрике Витра?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  В начале и середине каждого месяца фабрика присылает
+                  уведомление о своей акционной программе. В начале месяца мы
+                  получаем информацию о размерах скидки на различные серии
+                  мебели. В программу обычно входят большинство кухонных серий,
+                  а также некоторые гостиные, детские, спальни и обеденные
+                  столы. На товары, не входящие в модульные серии, скидка
+                  предоставляется весьма ограниченно. Для простых дилеров и для
+                  бренд-секций завод даёт отличающиеся по глубине и ассортименту
+                  скидки. Количество товаров со скидкой у бренд-секций заметно
+                  выше. В середине месяца фабрика, как правило, просто
+                  продлевает действие акций, запущенных в начале месяца.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  На сайте фабрики указано, что можно получить большую скидку
+                  при онлайн заказе - это значит, что мне выгоднее покупать на
+                  сайте фабрики, чем у Вас?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Увеличенный размер скидки за онлайн-заказ подразумевает, что
+                  при оформлении заказа на сайте ДаВита размер скидки на
+                  некоторые товары увеличивается на 10%. Фабрики делает это для
+                  контроля качества - колл-центр ДаВита прозванивает потом для
+                  получения обратной связи от покупателей по качеству продукции
+                  и сервиса. В конце оформления заказа фабрика предлагает для
+                  взаимодействия одну из бренд-секций по вашему городу и ваш
+                  заказ попадает всё равно к нам. Не забывайте, что нужно
+                  выбрать торговую точку в ТК Гудок! По факту даже если Вы
+                  оформляете заказ у нас в салоне, мы всё равно проводим его
+                  через сайт фабрики и мы делаем для Вас данную дополнительную
+                  скидку.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                  aria-expanded="false"
+                  aria-controls="collapse5"
+                >
+                  Всё-таки лучше самому оформить заказ на сайте ДаВита или
+                  обратиться к Вам?
+                </button>
+              </h2>
+              <div
+                id="collapse5"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading5"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Если у Вас простой единичный товар типа комода или
+                  компьютерного стола, то Вы вполне можете сами оформить его на
+                  официальном сайте фабрики, не забывайте указать филиал в Гудке
+                  для обслуживания вашего заказа. Если же Вы хотите преобрести
+                  целый гарнитур (кухонный, гостиный, спальный или детский), то
+                  однозначно лучше обратиться к нам. Консультант и при
+                  необходимости замерщик помогут Вам сделать правильный выбор.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse6"
+                  aria-expanded="false"
+                  aria-controls="collapse6"
+                >
+                  Я же могу вернуть мебель, которая не подошла мне по размеру,
+                  цвету или попросту не понравилась?
+                </button>
+              </h2>
+              <div
+                id="collapse6"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading6"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Постановление Правительства РФ от 19.01.1998 N 55 (ред. от
+                  16.05.2020) устанавливает перечень непродовольственных товаров
+                  надлежащего качества, не подлежащих возврату или обмену на
+                  аналогичный товар других размера, формы, габарита, фасона,
+                  расцветки или комплектации. И мебель входит в данный перечень,
+                  поэтому предлагаем Вам ответственно подойти к выбору мебели и
+                  при сомнениях лучше посетить торговую точку, чтобы лично
+                  увидеть образцы нашей мебели. Обменять или вернуть возможности
+                  не будет.
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!--Подвал Контакты-->
 
     <footer id="contacts" class="anchor">
       <div class="container-md">
@@ -834,10 +998,11 @@
         </div>
       </div>
 
-      <div class="map container-fluid">
+      <div class="map">
         <a
           class="dg-widget-link"
-          href="http://2gis.ru/samara/firm/70000001034625910/center/50.12580871582032,53.187380469899345/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+          rel="nofollow"
+          href="https://2gis.ru/samara/firm/70000001034625910/center/50.12580871582032,53.187380469899345/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
           >Посмотреть на карте Самары</a
         >
         <div class="dg-widget-link">
@@ -848,6 +1013,7 @@
         </div>
         <div class="dg-widget-link">
           <a
+            rel="nofollow"
             href="http://2gis.ru/samara/center/50.125779,53.186711/zoom/16/routeTab/rsType/bus/to/50.125779,53.186711╎DaVita-мебель, официальный представитель?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
             >Найти проезд до DaVita-мебель, официальный представитель</a
           >
@@ -859,8 +1025,8 @@
         <script charset="utf-8">
           new DGWidgetLoader({
             width: "100%",
-            height: 300,
-            borderColor: "#333",
+            height: 400,
+            borderColor: "rgba(238, 238, 238, 0.9);",
             pos: {
               lat: 53.187380469899345,
               lon: 50.12580871582032,
@@ -868,226 +1034,262 @@
             },
             opt: { city: "samara" },
             org: [{ id: "70000001034625910" }],
+            scrollWheelZoom: false,
+            //tap: false,
           });
         </script>
       </div>
 
-      <div class="container-fluid footer-contacts__wrapper">
-        <div class="contacts container-md">
-          <div class="row">
-            <div class="contacts-1 col">
-              <h6 class="contacts-1-title">Контакты</h6>
-              <div class="contacts-list-wrapper">
-                <ul class="contacts-1-list-1">
-                  <li class="contacts-item__address">
-                    <div class="address-img">
-                      <img src="assets/icons/address.png" alt="address" />
-                    </div>
-                    <div class="address-text">
-                      <p>г.Самара, ул. Красноармейская, 131</p>
-                      <p>ТЦ "Гудок", цокольный этаж</p>
-                      <p>напротив гипермаркета "Лента"</p>
-                    </div>
-                  </li>
-                  <li class="contacts-item__clock">
-                    <div class="clock-img">
-                      <img
-                        src="assets/icons/clock.svg"
-                        alt="work time"
-                        width="25px"
-                      />
-                    </div>
-                    <div class="clock-text">
-                      <p>10<sup>00</sup> - 20<sup>00</sup></p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="phone_img">
-                      <img src="assets/icons/tel.png" alt="phone" />
-                    </div>
-                    <div class="phone_text">8-964-987-16-44</div>
-                  </li>
-                  <li>
-                    <div class="phone_img">
-                      <img src="assets/icons/email.png" alt="email" />
-                    </div>
-                    <div class="phone_text">davita@etalon-samara.ru</div>
-                  </li>
-                </ul>
+      <div class="footer-contacts__wrapper">
+        <div class="container-md">
+          <div class="contacts">
+            <div class="row justify-content-center">
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 mr-0 px-0"
+              >
+                <div class="contacts-1">
+                  <h6 class="contacts-1-title">Контакты</h6>
+                  <div class="contacts-list-wrapper">
+                    <ul class="contacts-1-list-1">
+                      <li class="contacts-item-address">
+                        <div class="address-img">
+                          <img src="assets/icons/address.png" alt="address"  width="22px" height="auto"/>
+                        </div>
+                        <div class="address-text">
+                          <p>г.Самара, ул. Красноармейская, 131</p>
+                          <p>ТЦ "Гудок", цокольный этаж</p>
+                          <p>напротив гипермаркета "Лента"</p>
+                        </div>
+                      </li>
+                      <li class="contacts-item-clock">
+                        <div class="clock-img">
+                          <img
+                            src="assets/icons/clock.svg"
+                            alt="work time"
+                            width="25px"
+                          />
+                        </div>
+                        <div class="clock-text">
+                          <p>Ежедневно 10<sup>00</sup> - 20<sup>00</sup></p>
+                        </div>
+                      </li>
+
+                      <li class="contacts-item-phone">
+                        <img src="assets/icons/t.png" alt="phone"  width="33px" height="auto"/>
+                        <a class="phone" href="tel:+79277769678">
+                          <span class="phone_text">+7 (927) 776-96-78</span>
+                          <span class="phone_subtext">замерщик</span>
+                        </a>
+                      </li>
+                      <li class="contacts-item-phone">
+                        <a class="phone" href="tel:+79649871644">
+                          <img src="assets/icons/t.png" alt="phone"  width="33px" height="auto"/>
+                          <span class="phone_text">+7 (964) 987-16-44</span>
+                          <span class="phone_subtext">салон</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <div class="phone_img">
+                          <img src="assets/icons/email.png" alt="email" />
+                        </div>
+                        <div class="phone_text">davita@etalon-samara.ru</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              <ul class="contacts-1-list-2">
-                <li>
-                  <a href="https://www.instagram.com/davita_mebelsamara/">
-                    <img src="assets/icons/instagram.png" alt="instagram" />
-                    <span>Instagram</span>
-                  </a>
-                </li>
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 mr-0 px-0"
+              >
+                <div class="contacts-2">
+                  <h6 class="contacts-2-title">Полезные ресурсы</h6>
 
-                <li>
-                  <a
-                    class="telegram"
-                    href="https://tlgg.ru/@DaVita_Samara"
-                    target="_blank"
-                  >
-                    <img src="assets/icons/message-teleg.png" alt="telegram" />
-                    <span>Telegram</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="contacts-form col">
-              <h3>Уже хочу позвонить!</h3>
-              <ul class="contacts-form-list-1">
-                <li>
-                  <a class="phone-1">
-                    <img src="assets/icons/phone.png" alt="phone" />
-                    <span class="phone_text">+7-927-776-96-78</span>
-                    <span class="phone_subtext">замерщик</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="phone-2">
-                    <img src="assets/icons/phone.png" alt="phone" />
-                    <span class="phone_text">+7-964-987-16-44</span>
-                    <span class="phone_subtext">салон</span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="contacts-form-list-2">
-                <li>
-                  <a
-                    class="message"
-                    href="https://wa.me/79649871644"
-                    target="_blank"
-                  >
-                    <img
-                      src="assets/icons/message-whatsapp.png"
-                      alt="whatsapp"
-                    />
-                    <span>WhatsApp</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="message"
-                    href="https://viber.click/79649871644"
-                    target="_blank"
-                  >
-                    <img src="assets/icons/message-viber.png" alt="viber" />
-                    <span>Viber</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="contacts-2 col">
-              <h6 class="contacts-2-title">Полезные ресуры</h6>
+                  <div class="contacts-list-wrapper">
+                    <div class="contacts-2-block">
+                      <ul class="contacts-2-block-list-1">
+                        <li>
+                          <a
+                            class="link-davita"
+                            href="redirect.html"
+                            target="_blank"
+                            rel="nofollow"
+                            data-link="https://davitamebel.ru/"
+                          >
+                            <div>
+                              <img
+                                src="assets/icons/davita.png"
+                                alt="davita-mebel официальный сайт"
+                                width="25px"
+                                height="20px"
+                              />
+                            </div>
+                            <div>
+                              <span>Официальный сайт Давита-мебель</span>
+                            </div>
+                          </a>
+                        </li>
 
-              <div class="contacts-list-wrapper">
-                <div class="contacts-2-block">
-                  <ul class="contacts-2-block-list-1">
-                    <li>
-                      <a href="https://davitamebel.ru/"
-                        >Перейти на сайт davitamebel.ru</a
-                      >
-                    </li>
-                    <li>
-                      <a href="https://davitamebel.ru/3d/">Что-то еще</a>
-                    </li>
-                    <li>
-                      <a href="https://davitamebel.ru/3d/">Что-то еще</a>
-                    </li>
-                    <li>
-                      <a href="https://davitamebel.ru/3d/">Что-то еще</a>
-                    </li>
-                    <li>
-                      <a href="https://davitamebel.ru/3d/">Что-то еще</a>
-                    </li>
-                  </ul>
-                  <ul class="contacts-2-block-list-2">
+                        <li>
+                          <a
+                            href="https://etalon-samara.ru/"
+                            target="_blank"
+                            rel="nofollow"
+                          >
+                            <div>
+                              <img
+                                src="assets/icons/etalon.png"
+                                alt="etalon-samara mebel"
+                                width="25px"
+                                height="25px"
+                              />
+                            </div>
+                            <div>
+                              <span>
+                                Еще 5000+ наименований мебели для дома и офиса
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="contacts-2-block-list-2">
+                        <li>
+                          <a
+                            href="https://www.youtube.com/watch?v=bJ0rcRXKVFg&list=PL5rguM0CXeDZ7GRYe4ZgBv-e_Q__IAhQa"
+                            target="_blank"
+                            rel="nofollow"
+                          >
+                            <div>
+                              <img
+                                src="assets/icons/danger.png"
+                                alt="crash tests videos"
+                                width="25px"
+                                height="25px"
+                              />
+                            </div>
+                            <div>
+                              <span>КРАШ-ТЕСТЫ</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://davitamebel.ru/3d/"
+                            target="_blank"
+                            rel="nofollow"
+                          >
+                            <div>
+                              <img
+                                src="assets/icons/3D.png"
+                                alt="3D planner"
+                                width="25px"
+                                height="20px"
+                              />
+                            </div>
+                            <div>
+                              <span>3D-ПРОГРАММА</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 col-sm-12">
+                <div class="contacts-3">
+                  <h6 class="contacts-3-title">
+                    Официальные социальные акаунты Давита
+                  </h6>
+                  <ul class="contacts-3-list">
                     <li>
                       <a
-                        href="https://www.youtube.com/watch?v=bJ0rcRXKVFg&list=PL5rguM0CXeDZ7GRYe4ZgBv-e_Q__IAhQa"
-                        >КРАШ-ТЕСТЫ</a
-                      >
+                        href="https://www.youtube.com/channel/UC9Wxv6ZN2XaHWx2RYIxYM1g"
+                        rel="nofollow"
+                        ><img
+                          src="assets/icons/socia-yotube.png"
+                          alt="youtube"
+                          width="30px"
+                          height="30px"
+                      /></a>
                     </li>
                     <li>
-                      <a href="https://davitamebel.ru/3d/">3D-ПРОГРАММА</a>
+                      <a
+                        href="https://www.pinterest.ru/davitamebel/"
+                        target="_blank"
+                        rel="nofollow"
+                        ><img
+                          src="assets/icons/socal-pint.png"
+                          alt="pinterest"
+                          width="30px"
+                          height="30px"
+                      /></a>
                     </li>
                     <li>
-                      <a href="https://davitamebel.ru/3d/">ЧТО-ТО ЕЩЕ</a>
+                      <a
+                        href="https://twitter.com/davita_mebel"
+                        target="_blank"
+                        rel="nofollow"
+                        ><img
+                          src="assets/icons/social-twitter.png"
+                          alt="twitter"
+                          width="30px"
+                          height="30px"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/davita.tomsk/"
+                        target="_blank"
+                        rel="nofollow"
+                        ><img
+                          src="assets/icons/social-face.png"
+                          alt="facebook"
+                          width="30px"
+                          height="30px"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://ok.ru/group/57851996012594"
+                        target="_blank"
+                        rel="nofollow"
+                        ><img
+                          src="assets/icons/social-ok.png"
+                          alt="odnoklassniki"
+                          width="30px"
+                          height="30px"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://vk.com/davita_mebel"
+                        target="_blank"
+                        rel="nofollow"
+                        ><img
+                          src="assets/icons/social-vk.png"
+                          alt="vkontakte"
+                          width="30px"
+                          height="30px"
+                      /></a>
                     </li>
                   </ul>
                 </div>
               </div>
-
-              <ul class="contacts-2-list-3">
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UC9Wxv6ZN2XaHWx2RYIxYM1g"
-                    ><img
-                      src="assets/icons/socia-yotube.png"
-                      alt="youtube"
-                      width="30px"
-                      height="30px"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.ru/davitamebel/"
-                    ><img
-                      src="assets/icons/socal-pint.png"
-                      alt="pinterest"
-                      width="30px"
-                      height="30px"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/davita_mebel"
-                    ><img
-                      src="assets/icons/social-twitter.png"
-                      alt="twitter"
-                      width="30px"
-                      height="30px"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/davita.tomsk/"
-                    ><img
-                      src="assets/icons/social-face.png"
-                      alt="facebook"
-                      width="30px"
-                      height="30px"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://ok.ru/group/57851996012594"
-                    ><img
-                      src="assets/icons/social-ok.png"
-                      alt="odnoklassniki"
-                      width="30px"
-                      height="30px"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://vk.com/davita_mebel"
-                    ><img
-                      src="assets/icons/social-vk.png"
-                      alt="vkontakte"
-                      width="30px"
-                      height="30px"
-                  /></a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="container-md h-100 text-center mt-2">
-        <span>Самара</span>
-        <span>2021</span>
+      <div class="container-md">
+        <div class="last text-center">
+          <span>Самара</span>
+          <span>2021</span>
+        </div>
       </div>
     </footer>
+    <div class="overlay hide"></div>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -1096,40 +1298,11 @@
     ></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
 
-    <!-- <script src="jquery.instagramFeed.min.js"></script> -->
-    <script
-      async
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js"
-      integrity="sha512-/z6cDTmzplKFL9sRet94DsTK8ZdXIeIj4BZAVtjDKLG/DMl9lrQeOmVXMQrpb6KWwNNvqVAy+liFguc8jGOj6Q=="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      (function ($) {
-        $(window).on("load", function () {
-          $.instagramFeed({
-            username: "davita_mebelsamara",
-            /* username: "kot_mukha", */
-            container: "#instfeed",
-            display_profile: true,
-            display_biography: false,
-            display_gallery: true,
-            display_captions: false,
-            callback: null,
-            styling: false,
-            items: 8,
-            items_per_row: 8,
-            /* margin: 2, */
-          });
-        });
-      })(jQuery);
-    </script>
-
-    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

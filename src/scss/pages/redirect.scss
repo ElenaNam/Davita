@@ -1,0 +1,63 @@
+.body {
+  margin: 0;
+}
+.container {
+  padding: 15px;
+  height: auto;
+
+  @include for-size(md) {
+    margin: 10% auto 0;
+    width: 500px;
+  }
+}
+
+.message {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/bg/wood.jpg");
+  background-size: cover;
+  &-content {
+    padding: 10px;
+  }
+
+  &-header {
+    border: 1px solid transparent; //чтобы не схлопывались margins
+    padding: 0 15px;
+
+    @include for-size(md) {
+      padding: 0;
+    }
+
+    & h3 {
+      font-size: 14px;
+
+      @include for-size(md) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-body {
+    margin-bottom: 14px;
+    padding: 0 15px;
+    border: 1px solid transparent; //чтобы не схлопывались margins
+    &:not(a) {
+      font-size: 14px;
+      font-weight: 400;
+      color: $font-color-active-1;
+      @include for-size(md) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+    }
+    & p:first-child {
+      padding: 0 10px;
+    }
+
+    & a {
+      @include link();
+    }
+  }
+}

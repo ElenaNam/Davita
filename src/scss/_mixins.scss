@@ -2,19 +2,24 @@
 @import "./media";
 
 @mixin section-bg {
-  margin: 30px 0;
-  padding: 5px 0 10px;
-  border-radius: 7px;
-  /* background: url("../assets/bg/bg-section-title.png"); */
+  margin: 10px 0;
+  padding: 5px 0;
+
   background: #f5f5f5;
-  /* background-attachment: fixed; */
   text-align: center;
-  @include for-size(lg_down) {
-    margin: 10px 0;
-    padding: 5px 0;
+
+  @include for-size(md) {
+    margin: 15px 0;
+  }
+
+  @include for-size(lg) {
+    margin: 30px 0;
+    padding: 5px 0 10px;
+    border-radius: 7px;
   }
 }
 @mixin section-title {
+  padding: 0 15px;
   font: 300 40px/48px "Open Sans", "Arial", sans-serif;
   @include for-size(lg_down) {
     font-size: 28px;
@@ -49,13 +54,130 @@
 @mixin link {
   text-decoration: none;
   color: $font-color-default;
+  transition: 0.2s;
   &:hover {
     text-decoration: underline;
-    cursor: default;
+    cursor: pointer;
   }
 }
 
 @mixin contacts-title {
+  margin: 10px 0;
   font-weight: bold;
   text-align: center;
+}
+
+@mixin slider-arrows {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 500 !important;
+  width: 14px;
+  height: 26px;
+  transform: translateX(0);
+  transition: all 0.3s;
+  //background-size: cover;
+  @include for-size(md) {
+    width: 20px;
+    height: 38px;
+  }
+  @include for-size(lg) {
+    width: 25px;
+    height: 48px;
+  }
+  @include for-size(xl) {
+    width: 30px;
+    height: 55px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    color: black;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@mixin slider-arrow-left {
+  left: 30px;
+  background: url("../assets/icons/left.png") no-repeat;
+  background-size: cover;
+
+  /*   @include for-size(lg) {
+    left: 15px;
+  } */
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: url("../assets/icons/left.png") no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    transform: translateX(-2px);
+    @include for-size(lg) {
+      transform: translateX(-10px);
+    }
+  }
+
+  &::before {
+    content: "";
+  }
+}
+
+@mixin slider-arrow-right {
+  right: 30px;
+  background: url("../assets/icons/right.png") no-repeat;
+  background-size: cover;
+
+  /*   @include for-size(lg) {
+    right: 15px;
+  } */
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: url("../assets/icons/right.png") no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    transform: translateX(2px);
+    @include for-size(lg) {
+      transform: translateX(10px);
+    }
+  }
+
+  &::before {
+    content: "";
+  }
+}
+
+@mixin slider-dots {
+  height: 25px;
+  bottom: 0;
+
+  & li {
+    margin: 0;
+
+    @include for-size(md) {
+      margin: 0 5px;
+    }
+
+    & button::before {
+      color: $font-color-default;
+      font-size: 10px;
+
+      @include for-size(md) {
+        font-size: 15px;
+      }
+    }
+    &.slick-active button::before {
+      color: $font-color-active-1;
+    }
+  }
 }

@@ -1,34 +1,44 @@
-@import "../mixins";
-@import "../variables";
-@import "../media";
-
 .header {
   background: white;
   border-bottom: 1px solid $font-color-border;
+  &.fixed-top {
+    z-index: 1000;
+  }
 }
+
 .header__top-wrapper {
   width: 100%;
   height: 48px;
+  display: flex;
+  align-items: center;
   background: url("../assets/bg/wood.jpg");
   background-size: cover;
+
+  /*   #navbarSupportedContent.show {
+
+  } */
+
+  & .navbar-collapse.navbar-collapsing {
+    display: none;
+  }
 }
 
 .header__top {
   & .navbar {
-    /* border: 1px solid green; */
     position: relative;
+    justify-content: start;
+    align-items: center;
+    //боковые отступы
+    padding: 0 30px;
 
-    @include for-size(lg_down) {
-      justify-content: start;
-      align-items: end;
-    }
-    @include for-size(sm_down) {
-      flex-wrap: nowrap;
+    @include for-size(lg) {
+      justify-content: space-between;
+      padding: 0;
     }
   }
-  & .navbar-collapse {
-    height: 32px;
-    /* border: 1px solid palevioletred; */
+
+  & .navbar-light .navbar-toggler {
+    border: none;
   }
 
   & .navbar-light .navbar-nav .nav-link {
@@ -39,54 +49,67 @@
     color: $font-color-default;
     text-decoration: underline;
     transition: 0.3s;
-    cursor: default;
   }
   & .custom-toggler.navbar-toggler {
     border: none;
-    padding-top: 0;
+    //padding: 0 5px;
+    padding: 0;
     margin-right: 6px;
+    &:focus {
+      box-shadow: none;
+    }
+    @include for-size(md) {
+      margin-right: 10px;
+    }
   }
 
   & .custom-toggler .navbar-toggler-icon {
+    //padding: 0 5px;
     background-image: url("../assets/icons/menu.png");
     background-size: cover;
     min-height: 37px;
     outline: none;
   }
   & .navbar-brand {
-    display: none;
-    /* outline: none; */
+    display: flex;
 
-    @include for-size(lg_down) {
-      display: flex;
+    @include for-size(lg) {
+      display: none;
     }
   }
 
   &-left {
-    /*     & .navbar-text {
-      min-width: 182px;
-    } */
+    position: absolute;
+    //боковой отступ
+    right: 30px;
+
+    @include for-size(lg) {
+      position: relative;
+      right: 0;
+    }
+
     & .nav-link {
       display: contents;
+      &:hover {
+        color: $font-color-active-1 !important;
+      }
     }
 
     & a img {
-      width: 11px;
-      /* height: 15px; */
-      margin-right: 10px;
+      /*       position: absolute;
+      right: 5px;*/
+      width: 25px;
+      height: 33px;
 
-      @include for-size(lg_down) {
-        position: absolute;
-        right: 0;
-        width: 20px;
-        height: 25px;
+      @include for-size(lg) {
+        width: 12px;
+        height: 16px;
+        margin-right: 5px;
       }
     }
     & a span {
-      text-decoration: underline;
-      text-decoration-style: dashed;
       font-weight: bold;
-
+      border-bottom: 1px dashed;
       @include for-size(lg_down) {
         display: none;
       }
@@ -94,30 +117,66 @@
   }
 
   &-center {
-    /* border: 1px solid rgb(151, 6, 6); */
     width: 100%;
     justify-content: space-between;
-    @include for-size(lg_down) {
+    margin: 0 auto;
+
+    &.navbar-nav {
+      position: absolute;
+      left: 0;
+      top: 43px;
+      margin: 0;
       padding-left: 10px;
+      padding-right: 100px;
+      border: 1px solid rgba(51, 51, 51, 0.5);
+      //width: max-content;
+      width: 100%;
+      justify-content: start;
+      background-color: white;
+
+      @include for-size(lg) {
+        background-color: transparent;
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+        padding: 0;
+        border: none;
+      }
     }
   }
 
   &-right {
+    position: absolute;
+    padding-left: 5px;
+    right: 65px;
+    margin-right: 0;
+
     text-align: end;
+    @include for-size(lg) {
+      position: relative;
+      right: 0;
+    }
+
     & .nav-link {
       display: contents;
+      &:hover {
+        color: $font-color-active-1 !important;
+      }
     }
 
     & a img {
-      width: 11px;
-      margin-right: 10px;
+      /*       position: absolute;
+      padding-left: 5px;
+      top: 17px;
+      right: 35px;  */
+      width: 30px;
+      height: 33px;
+      //margin-right: 0;
 
-      @include for-size(lg_down) {
-        position: absolute;
-        padding-left: 5px;
-        right: 50px;
-        width: 30px;
-        margin-right: 0;
+      @include for-size(lg) {
+        width: 15px;
+        height: 16px;
+        margin-right: 5px;
       }
     }
     & a span {
@@ -131,25 +190,48 @@
   &.container-md {
     @include for-size(lg_down) {
       width: 100% !important;
-      /* background-color: darkgreen !important; */
       margin: 0;
     }
   }
 }
 
 .header__bottom {
-  /* border: 1px solid salmon; */
   display: none;
-  /* margin-top: 17px; */
   padding: 17px 0 20px;
   height: 75px;
   align-items: center;
   justify-content: space-between;
 
+  & .slogan {
+    height: inherit;
+    padding: 5px;
+  }
+  & .btn-invite {
+    outline: none;
+    border: 1px solid $font-color-border;
+
+    &:active,
+    &:hover,
+    &:focus {
+      border: 1px solid $font-color-active-1;
+      color: $font-color-active-1;
+      box-shadow: none;
+      transition: 0.2s;
+      & svg path {
+        fill: $font-color-active-1;
+      }
+    }
+  }
+  & .header-insta {
+    text-decoration: none;
+
+    & span {
+      @include link();
+      margin-left: 5px;
+    }
+  }
+
   @include for-size(lg) {
     display: flex;
   }
-}
-.navbar-brand:hover {
-  cursor: default;
 }

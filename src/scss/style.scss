@@ -1,18 +1,32 @@
 @import "./mixins";
 @import "./variables";
 @import "./blocks/header.scss";
+@import "./blocks/aside.scss";
 @import "./blocks/main.scss";
 @import "./blocks/footer.scss";
+@import "./pages/redirect.scss";
 @import "./media";
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 body {
   color: $font-color-default;
   cursor: default;
+  overflow-x: hidden;
   @include text-default();
+
+  &.modal-open {
+    position: fixed;
+    left: 0;
+    right: 0;
+    .header {
+      padding-right: 0 !important;
+    }
+  }
 }
 ul {
   padding-left: 0;
@@ -20,22 +34,41 @@ ul {
     list-style: none;
   }
 }
-
+a {
+  outline: none;
+}
 .container-fluid {
   padding: 0;
 }
 .container-md {
   padding-left: 0;
   padding-right: 0;
+  @include for-size(lg_down) {
+    max-width: 100%;
+  }
 }
 .anchor::before {
   display: block;
   content: "";
-  margin-top: -150px; /* высота header */
-  height: 150px;
+  margin-top: -50px;
+  height: 50px;
   visibility: hidden;
-  @include for-size(lg_down) {
-    margin-top: -55px;
-    height: 55px;
+  @include for-size(lg) {
+    margin-top: -120px;
+    height: 120px;
   }
+}
+.hide {
+  display: none !important;
+  //transform: translateY(-350px);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1020;
 }

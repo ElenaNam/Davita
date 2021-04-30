@@ -1,0 +1,325 @@
+[
+  {
+    "src": "assets/images/catalog/bedrooms-katrin-1.jpg",
+    "link": "https://davitamebel.ru/catalog/mebel-v-spalnu/katrin/",
+    "category": "Спальня",
+    "title": "Катрин",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/bedrooms-rozali-1.jpg",
+    "link": "https://davitamebel.ru/catalog/mebel-v-spalnu/rozali_2/",
+    "category": "Спальня",
+    "title": "Розали",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/bedrooms-sonata-1.jpg",
+    "link": "https://davitamebel.ru/catalog/mebel-v-spalnu/sonata_2/",
+    "category": "Спальня",
+    "title": "Соната",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/bedrooms-tiffani-1.jpg",
+    "link": "https://davitamebel.ru/catalog/mebel-v-spalnu/tiffani_3/",
+    "category": "Спальня",
+    "title": "Тиффани",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/bedrooms-versal-1.jpg",
+    "link": "https://davitamebel.ru/catalog/mebel-v-spalnu/versal_2/",
+    "category": "Спальня",
+    "title": "Версаль",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/hallways-freska-1.jpg",
+    "link": "https://davitamebel.ru/catalog/prikhozhie/freska_1/",
+    "category": "Прихожая",
+    "title": "Фреска",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/hallways-mery-1.jpg",
+    "link": "https://davitamebel.ru/catalog/prikhozhie/meri/",
+    "category": "Прихожая",
+    "title": "Мэри",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/hallways-tiffani-1.jpg",
+    "link": "https://davitamebel.ru/catalog/prikhozhie/tiffani_2/",
+    "category": "Прихожая",
+    "title": "Тиффани",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-avrora-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/avrora/",
+    "category": "Кухня",
+    "title": "Аврора",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-bruklin-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/bruklin/",
+    "category": "Кухня",
+    "title": "Бруклин",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-byanka-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/byanka/",
+    "category": "Кухня",
+    "title": "Бьянка",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-gloria3-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/gloriya_3/",
+    "category": "Кухня",
+    "title": "Глория 3",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-grafit-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/grafit/",
+    "category": "Кухня",
+    "title": "Графит",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-karolina-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/karolina/",
+    "category": "Кухня",
+    "title": "Каролина",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-milana-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/milana/",
+    "category": "Кухня",
+    "title": "Милана",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-oliviacream-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/oliviya_71/",
+    "category": "Кухня",
+    "title": "Оливия Крем",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-oliviagreen-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/oliviya_72/",
+    "category": "Кухня",
+    "title": "Оливия Грин",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-oranzh-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/oranzh/",
+    "category": "Кухня",
+    "title": "Оранж",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-palermo-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/palermo/",
+    "category": "Кухня",
+    "title": "Палермо",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-rio-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/rio/",
+    "category": "Кухня",
+    "title": "Рио",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-sharlotta-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/sharlotta/",
+    "category": "Кухня",
+    "title": "Шарлотта",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-tiffani-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/tiffani/",
+    "category": "Кухня",
+    "title": "Тиффани",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/kitchen-viktoriya-1.jpg",
+    "link": "https://davitamebel.ru/catalog/kupit-kuhni/viktoriya/",
+    "category": "Кухня",
+    "title": "Виктория",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-britaniya-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/britaniya/",
+    "category": "Детская",
+    "title": "Британия",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-everest-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/everest/",
+    "category": "Детская",
+    "title": "Эверест",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-fristayl-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/fristail/",
+    "category": "Детская",
+    "title": "Фристайл",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-megapolis-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/megapolis/",
+    "category": "Детская",
+    "title": "Мегаполис",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-rozali-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/rozali/",
+    "category": "Детская",
+    "title": "Розали",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-sonata-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/sonata/",
+    "category": "Детская",
+    "title": "Соната",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-tiffani-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/tiffani_1/",
+    "category": "Детская",
+    "title": "Тиффани",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/childrenrooms-versal-1.jpg",
+    "link": "https://davitamebel.ru/catalog/detskaja-mebel/versal/",
+    "category": "Детская",
+    "title": "Версаль",
+    "description": ""
+  },
+
+  {
+    "src": "assets/images/catalog/livingrooms-adel-1.jpg",
+    "link": "https://davitamebel.ru/catalog/gostinye/adel/",
+    "category": "Гостиная",
+    "title": "Адель",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/livingrooms-freska-1.jpg",
+    "link": "https://davitamebel.ru/catalog/gostinye/freska/",
+    "category": "Гостиная",
+    "title": "Фреска",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/livingrooms-mokko-1.jpg",
+    "link": "https://davitamebel.ru/catalog/gostinye/mokko/",
+    "category": "Гостиная",
+    "title": "Мокко",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/livingrooms-tiffani-1.jpg",
+    "link": "https://davitamebel.ru/catalog/gostinye/tiffani_4/",
+    "category": "Гостиная",
+    "title": "Тиффани",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/livingrooms-venetsiya-1.jpg",
+    "link": "https://davitamebel.ru/catalog/gostinye/venecija/",
+    "category": "Гостиная",
+    "title": "Венеция",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-alpha61-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/alfa_61/",
+    "category": "Офис",
+    "title": "Альфа 61",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-alpha62-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/alfa_62/",
+    "category": "Офис",
+    "title": "Альфа 62",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-alpha63-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/alfa_63/",
+    "category": "Офис",
+    "title": "Альфа 63",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-cesar-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/caesar/",
+    "category": "Офис",
+    "title": "Цезарь",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-lider82-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/lider/",
+    "category": "Офис",
+    "title": "Лидер 82",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-lider84-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/lider_84/",
+    "category": "Офис",
+    "title": "Лидер 84",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-liderprestizh-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/lider_prestig/",
+    "category": "Офис",
+    "title": "Лидер-Престиж",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-rubin40-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/rubin_40/",
+    "category": "Офис",
+    "title": "Рубин 40",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-rubin41-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/rubin_41/",
+    "category": "Офис",
+    "title": "Рубин 41",
+    "description": ""
+  },
+  {
+    "src": "assets/images/catalog/office-rubin42-1.jpg",
+    "link": "https://davitamebel.ru/catalog/ofisnaja-mebel/rubin_42/",
+    "category": "Офис",
+    "title": "Рубин 42",
+    "description": ""
+  }
+]

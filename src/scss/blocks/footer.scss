@@ -1,40 +1,76 @@
-@import "../mixins";
-@import "../variables";
-@import "../media";
-
 #contacts {
   width: 100%;
+  justify-content: space-between;
+
+  @include for-size(md_down) {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .footer-contacts__wrapper {
+    width: 100%;
     background: url("../assets/bg/wood.jpg");
     background-size: cover;
-    padding-top: 30px;
-    & .col {
-      /*  border: 1px solid green; */
-      /* height: 250px; */
+
+    padding-top: 10px;
+
+    @include for-size(lg) {
+      padding-top: 30px;
     }
   }
 }
 
 .contacts {
+  display: flex;
+  font-size: 13px;
+
+  @include for-size(sm){
+    font-size: 14px;
+    //padding: 0 10px;
+  }
+
+  //padding: 0 10px;
+  & .row {
+    //боковые отступы
+    padding: 0 25px;
+    --bs-gutter-x: 0;
+  }
   &-list-wrapper {
-    min-height: 182px;
+    // min-height: 225px;
+    height: 100%;
+  }
+  @include for-size(xl) {
+    display: block;
   }
 }
 
 .map {
-  height: 400px;
+  height: 405px;
+  //боковые отступы
+  padding: 5px 30px;
+  width: 100%;
+
+  @include for-size(lg) {
+    padding: 5px 0;
+  }
 }
 .contacts-1 {
   &-title {
     @include contacts-title();
   }
   &-list-1 {
+    margin-bottom: 0;
+
     & .clock-text p {
       margin: 0;
     }
+    & .contacts-item-phone img,
+    .contacts-item-phone .phone_text {
+      padding: 5px;
+    }
   }
   &-list-2 {
+    padding: 10px;
     border-top: 1px solid $font-color-border;
     display: flex;
     justify-content: center;
@@ -59,58 +95,33 @@
     }
   }
 }
-.contacts-form {
-  height: fit-content;
-  border: 1px solid $font-color-border;
-  border-radius: 7px;
-  padding: 10px;
 
-  & h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    color: $font-color-active-1;
-  }
-
-  &-list-1 {
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &-list-2 {
-    display: flex;
-    justify-content: center;
-    & li {
-      margin: 0 5px;
-    }
-  }
-
-  & ul li {
-    margin-top: 7px;
-    & a {
-      @include link();
-      font-size: 20px;
-    }
-  }
-}
 .contacts-2 {
   &-title {
     @include contacts-title();
   }
   &-block {
+    margin-top: 5px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 
     &-list-1 {
-      & li {
-        margin-top: 7px;
-      }
+      margin-bottom: 0;
     }
-    &-list-2 {
-      & li {
-        margin-top: 7px;
-        text-align: right;
+
+    & li {
+      margin-top: 7px;
+
+      a {
+        display: flex;
+        @include link();
+        &:active {
+          text-shadow: 1px 0 0;
+        }
+        & div {
+          padding: 0 5px;
+        }
       }
     }
   }
@@ -125,15 +136,43 @@
     }
   }
   & a {
-    @include link();
+    @include contacts-item();
+    text-decoration: none;
+    color: $font-color-default;
+    &:hover {
+      cursor: default;
+      opacity: 0.8;
+    }
 
     & span {
       margin-left: 5px;
     }
   }
-
-  & ul li {
-    /* border: 1px solid orange; */
-    /* display: contents; */
+}
+.contacts-3 {
+  padding-top: 10px;
+  justify-content: center;
+  border-top: 1px solid $font-color-border;
+  display: flex;
+  flex-direction: column;
+  &-title {
+    @include contacts-title();
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+    & li {
+      margin: 0 7px;
+      & a:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.last {
+  height: 25px;
+  @include for-size(sm) {
+    padding: 15px 20px;
+    height: 55px;
   }
 }
