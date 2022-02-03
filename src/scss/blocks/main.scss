@@ -1,9 +1,9 @@
 @import "./catalogslider.scss";
 
 .main {
-  margin-top: 150px; /* высота header */
-  @include for-size(lg_down) {
-    margin-top: 48px;
+  margin-top: 48px; /* высота header */
+  @include for-size(lg) {
+    margin-top: 150px;
   }
 }
 
@@ -24,7 +24,8 @@
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   }
   &-content {
-    background: url("../assets/bg/wood.jpg");
+    background-color: #e6d4c0;
+    background-image: url("../assets/bg/wood.jpg");
     background-size: cover;
 
     & .close {
@@ -128,6 +129,12 @@
 }
 
 .about {
+  & .container-lg {
+    @include for-size(lg) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
   & .slick-dotted.slick-slider {
     padding-top: 5px;
   }
@@ -227,7 +234,6 @@
     @include for-size(lg) {
       display: flex;
       width: 23%;
-      //margin: 0 0 20px;
       margin: 0 0 25px;
 
       &:nth-child(odd) {
@@ -328,82 +334,78 @@
         }
       }
     }
-    & .instfeed {
-      display: flex;
-      justify-content: center;
-      padding: 0 25px;
 
-      @include for-size(md) {
-        //padding: 0 20px;
-      }
+    & .instatape.anim1 {
+      margin: 0px auto 30px;
+      padding: 0 30px;
+
       @include for-size(lg) {
         padding: 0;
       }
+    }
 
-      & .instagram_gallery {
+    & .clear {
+      clear: both;
+    }
+    & .profile-col-1,
+    .profile-col-2 {
+      display: none;
+      @include for-size(sm) {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        margin: 0 !important;
-        text-align: center;
-        overflow: hidden;
+      }
+    }
 
-        & a {
-          //3 в ряд
-          width: 32%;
+    & .profile-col-3 {
+      width: 100%;
+      @include for-size(sm) {
+        width: auto;
+      }
+    }
 
-          @include for-size(sm) {
-            //4 в ряд
-            width: 24%;
-          }
-          @include for-size(md) {
-            //6 в ряд
-            width: 15%;
-          }
+    & .instatape .post-link {
+      padding: 7px 10px 9px 10px;
+      font-size: 13px;
 
-          @include for-size(xl) {
-            //10 в ряд
-            width: 9%;
-          }
-          @include for-size(xxl) {
-            //12 в ряд
-            flex-wrap: nowrap;
-            width: 8%;
-          }
+      @include for-size(sm) {
+        padding: 10px 15px 9px 15px;
+        font-size: 14px;
+      }
+    }
+    & .instatape .profile-avatar {
+      width: 40px;
+      height: 40px;
 
-          &:nth-child(5) img,
-          &:nth-child(6) img,
-          &:nth-child(7) img,
-          &:nth-child(8) img {
-            margin-bottom: 5px;
-          }
+      @include for-size(md) {
+        width: 60px;
+        height: 60px;
+      }
+    }
 
-          & img {
-            margin: 4px;
-            width: 90%;
-            border: 1px solid $font-color-border;
+    & .instatape .item-w16,
+    .instatape .item-w20,
+    .instatape .item-w25,
+    .instatape .item-w30,
+    .instatape .item-w33,
+    .instatape .item-w40,
+    .instatape .item-w50,
+    .instatape .item-w60,
+    .instatape .item-w66,
+    .instatape .item-w70,
+    .instatape .item-w75,
+    .instatape .item-xs-w50 {
+      width: 33%;
+    }
 
-            @include for-size(sm) {
-              margin-bottom: 10px;
-            }
-            @include for-size(md) {
-              //margin: 0 0 12px 0;
-              //width: 100%;
-              margin-bottom: 5px;
-
-              //margin: 0 0 15px 0;
-            }
-            @include for-size(lg) {
-              //margin: 0 0 15px 0;
-              width: 100%;
-            }
-            @include for-size(xl) {
-              // картинки в один ряд
-              margin: 0;
-            }
-          }
-        }
+    @include for-size(sm) {
+      .instatape .item-w33,
+      .instatape .item-sm-w33 {
+        width: 25%;
+      }
+    }
+    @include for-size(lg) {
+      .instatape .item-w33,
+      .instatape .item-sm-w33 {
+        width: 16.66%;
       }
     }
   }
@@ -489,8 +491,10 @@
         }
         & h5 {
           font-weight: bold;
-          @include for-size(xl_down) {
-            font-size: 18px;
+          font-size: 18px;
+
+          @include for-size(xl) {
+            font-size: 20px;
           }
         }
       }

@@ -31,17 +31,5 @@
     @media (max-width: 991px) {
       @content;
     }
-  } @else if $size==xl_down {
-    @media (max-width: 1199px) {
-      @content;
-    }
-  } @else if $size==md_down {
-    @media (max-width: 767px) {
-      @content;
-    }
-  } @else if $size==sm_down {
-    @media (max-width: 575px) {
-      @content;
-    }
   }
 }

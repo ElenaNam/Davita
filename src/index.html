@@ -33,7 +33,8 @@
     <link
       rel="stylesheet"
       href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
-    />
+    />    
+    <link rel="stylesheet" type="text/css" href="instatape/css/instatape-min.css" />
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -76,11 +77,12 @@
   </head>
   <body>    
     <!-- Шапка -->
-
     <header id="header" class="header fixed-top">
+      <!--*верхнее меню*-->
       <div class="header__top-wrapper">
         <div class="header__top container-md px-0">
           <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+            <!--кнопка гамбургер-->
             <button
               id="btnCollapseToggler"
               class="navbar-toggler custom-toggler"
@@ -93,7 +95,8 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!--/кнопка гамбургер-->
+            <!--лого маленькое-->
             <a class="navbar-brand p-0" href="#first">
               <img
                 src="assets/images/logo/logo_small.png"
@@ -102,63 +105,56 @@
                 alt="logo"
               />
             </a>
-
-            <div class="header__top-left navbar-text col-lg-3">
-              <a
-                class="nav-link pl-0 text-left"
-                target="_blank"
-                rel="nofollow"
-                href="https://yandex.ru/maps/51/samara/?display-text=DaVita&ll=50.129954%2C53.187692&mode=search&sctx=ZAAAAAgBEAAaKAoSCfYksDkHDUlAEQiQoWMHmUpAEhIJS2z9%2F3990T8RBbsHR1XDuz8oCjgAQJudBkgBVc3MzD5YAGJFcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9BZHZlcnRzL05vdFNob3dPbkhhcmRSdWJyaWNGZWF0dXJlL0VuYWJsZT10cnVlagJydXAAnQHNzEw9oAEAqAEAvQHfQIBL6gEA8gEA%2BAEAggIZKChjaGFpbl9pZDooNDM4MjEzODI0MCkpKYoCAA%3D%3D&sll=50.129954%2C53.187692&sspn=0.025889%2C0.010276&text=%7B%22text%22%3A%22DaVita%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%224382138240%22%5D%7D%5D%7D&whatshere%5Bpoint%5D=50.128198%2C53.187341&whatshere%5Bzoom%5D=15.4&z=15.4"
-              >
-                
-                <img src="assets/icons/address.png" alt="address" /> 
-                <span>Самара, ТЦ "Гудок"</span>
-              </a>
+            <!--лого маленькое-->
+            <!--контакты магазинов-->
+            <div class="header-contacts d-flex justify-content-between flex-column hide-desc">
+              <a href="#contacts">Наши магазины</a>
             </div>
-
+            <!--/контакты магазинов-->
+            <!--навигация-->
             <div
               class="collapse navbar-collapse flex-grow-1 justify-content-center"
               id="navbarSupportedContent"
             >
-              <ul class="header__top-center navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">О нас</a>
-                </li>
+              <div class="container-fluid">
+                <ul class="header__top-center navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">О нас</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#news">Новости</a>
-                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#news">Новости</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#catalog">Каталог</a>
-                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#catalog">Каталог</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#reviews">Отзывы</a>
-                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Отзывы</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#FAQ">Вопрос-Ответ</a>
-                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#FAQ">Вопрос-Ответ</a>
+                  </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#contacts">Контакты</a>
-                </li>
-              </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              
             </div>
-
-            <div class="header__top-right navbar-text col-md-1 col-lg-3">
-              <a class="nav-link pr-0 text-right" href="tel:+79649871644">
-                <!-- <img src="assets/icons/tel.png" alt="phone" /> -->
-                <img src="assets/icons/t.png" alt="phone" />
-                <span>+7 (964) 987-16-44</span>
-              </a>
-            </div>
+            <!--/навигация-->
+            
           </nav>
         </div>
       </div>
+      <!--//*верхнее меню*-->
 
+      <!--*нижнее меню*-->
       <div class="header__bottom container-md">
+        <!--лого большое-->
         <a class="navbar-brand" href="#first">
           <img
             src="assets/images/logo/logo_long.png"
@@ -168,11 +164,10 @@
             title="DaVita"
           />
         </a>
-
-        <img src="assets/images/logo/slogan.png" alt="slogan" class="slogan" />
-
+        <!--/лого большое-->
+        <!--инстаграм-->
         <a
-          href="https://www.instagram.com/davita_mebelsamara/"
+          href="https://www.instagram.com/davita.smr/"
           target="_blank"
           rel="nofollow"
           class="header-insta"
@@ -183,9 +178,9 @@
             width="30px"
             height="30px"
           />
-          <!-- <span>Инстаграм</span> -->
         </a>
-
+        <!--/инстаграм-->
+        <!--пригласить на замер-->
         <button
           type="button"
           class="btn btn-invite"
@@ -204,12 +199,54 @@
               fill="#746C61"
             />
           </svg>
-
           ПРИГЛАСИТЬ НА ЗАМЕР
         </button>
+        <!--/пригласить на замер-->
+        <!--контакты магазинов-->
+        <div class="header-contacts d-flex justify-content-between">
+          <div class="header-contacts header-contacts-1">
+            <ul>
+              <li><a
+                class=""
+                target="_blank"
+                rel="nofollow"
+                href="https://yandex.ru/maps/51/samara/?display-text=DaVita&ll=50.129954%2C53.187692&mode=search&sctx=ZAAAAAgBEAAaKAoSCfYksDkHDUlAEQiQoWMHmUpAEhIJS2z9%2F3990T8RBbsHR1XDuz8oCjgAQJudBkgBVc3MzD5YAGJFcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9BZHZlcnRzL05vdFNob3dPbkhhcmRSdWJyaWNGZWF0dXJlL0VuYWJsZT10cnVlagJydXAAnQHNzEw9oAEAqAEAvQHfQIBL6gEA8gEA%2BAEAggIZKChjaGFpbl9pZDooNDM4MjEzODI0MCkpKYoCAA%3D%3D&sll=50.129954%2C53.187692&sspn=0.025889%2C0.010276&text=%7B%22text%22%3A%22DaVita%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%224382138240%22%5D%7D%5D%7D&whatshere%5Bpoint%5D=50.128198%2C53.187341&whatshere%5Bzoom%5D=15.4&z=15.4"
+              >
+                <svg width="20" height="29" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.966 16.354C15.066 16.25 15.066 16.041 15.166 15.937C15.666 15.101 16.966 11.864 16.866 9.25295C16.866 7.26895 16.266 5.28295 14.966 3.71695C13.766 2.14995 11.966 1.21095 10.066 0.897951C6.26598 0.270952 2.26599 2.56895 1.26599 6.43295C0.765985 8.31295 0.765985 10.192 1.16599 12.072C2.26599 17.084 5.16599 21.262 8.26599 25.232C8.86598 25.962 8.96598 25.962 9.56598 25.126C12.266 21.576 13.466 19.278 14.966 16.354ZM9.36598 23.559C9.16599 23.873 8.96599 24.082 8.76599 24.396C5.56598 20.114 2.76599 15.936 1.86599 10.715C1.06599 6.53795 3.46599 2.88195 7.46599 1.94195C11.066 1.10695 14.866 3.50795 15.666 7.37195C15.966 8.93895 15.866 10.505 15.466 11.967C14.366 16.353 12.066 19.695 9.36598 23.559ZM12.066 11.027C12.266 10.61 12.266 10.088 12.266 9.56695C12.266 9.04395 12.166 8.62695 12.066 8.20895C11.866 7.79095 11.666 7.37295 11.266 7.05895C10.966 6.74595 10.566 6.43195 10.066 6.22295C9.66599 6.01395 9.16599 5.91095 8.66599 5.91095C8.16599 5.91095 7.76599 6.01395 7.26599 6.22295C6.86598 6.43295 6.46599 6.64195 6.16599 7.05995C5.86598 7.37295 5.56599 7.78995 5.46599 8.31195C5.36599 8.83395 5.26599 9.25195 5.26599 9.77495C5.26599 10.297 5.36599 10.715 5.46599 11.133C5.66599 11.55 5.86598 11.968 6.26599 12.281C6.56599 12.595 6.96599 12.907 7.46599 13.116C7.86599 13.325 8.36599 13.43 8.86599 13.43C9.36599 13.43 9.76598 13.325 10.266 13.116C10.666 12.907 11.066 12.595 11.366 12.281C11.666 11.864 11.966 11.445 12.066 11.027ZM6.76599 11.133C6.46598 10.715 6.36598 10.193 6.26599 9.67095C6.26599 9.35695 6.26599 9.04395 6.46599 8.62595C6.56599 8.31295 6.76599 7.99895 6.96599 7.78995C7.16599 7.57995 7.46598 7.37195 7.76599 7.26795C8.06599 7.16295 8.36598 7.05995 8.76599 7.05995C9.26599 7.05995 9.76599 7.16395 10.166 7.47695C10.566 7.79095 10.866 8.10395 11.066 8.62695C11.266 9.04395 11.366 9.56695 11.266 10.088C11.166 10.611 10.966 11.028 10.566 11.445C10.266 11.863 9.76598 12.073 9.26598 12.177C8.76598 12.281 8.26599 12.28 7.86599 12.072C7.46599 11.862 7.06599 11.55 6.76599 11.132V11.133Z" fill="#CC0A3B"/>
+                </svg>
+                Самара, ТЦ "Гудок"</a></li>
+              <li><a class="" href="tel:+79649871644"><svg width="21" height="21" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.1792 19.7443C17.9605 20.9943 16.3998 21.4487 14.8379 21.496L14.6083 21.4982C13.3843 21.5101 12.2368 21.1925 11.1052 20.665L11.105 20.6649C8.64489 19.5192 6.68152 17.7539 4.86148 15.738C3.27716 13.9818 1.93963 12.1077 1.11616 9.94074C0.297215 7.78249 0.251485 5.66903 1.24023 3.57622L1.24047 3.57572C1.82149 2.34238 2.88191 1.52306 4.08244 0.6723L4.08251 0.672401L4.09145 0.665765C4.247 0.550246 4.4438 0.49049 4.64565 0.501233C4.84744 0.511975 5.03509 0.592126 5.17513 0.722271L5.18135 0.728054L5.18777 0.733623C6.49435 1.86765 7.4225 3.24131 7.82719 4.87952L7.82752 4.88085C7.95687 5.39836 7.78389 5.88488 7.29436 6.27538L7.29378 6.27585C6.87219 6.61319 6.45095 6.94478 6.02811 7.27069C5.54211 7.64275 5.17627 8.05183 5.01223 8.56845C4.8473 9.08786 4.91307 9.63102 5.11047 10.214C5.49009 11.3449 6.17035 12.301 6.93564 13.1254C7.70154 13.9547 8.53949 14.7196 9.35921 15.4679C9.51887 15.6136 9.67784 15.7588 9.83545 15.9036C10.1205 16.1665 10.4783 16.3471 10.7548 16.4867C10.7752 16.497 10.7952 16.5071 10.8147 16.517L10.8163 16.5178C11.292 16.7571 11.7822 16.8569 12.2697 16.7925C12.7558 16.7283 13.1995 16.506 13.5929 16.1662C13.832 15.9621 14.0691 15.7176 14.2848 15.4953C14.3903 15.3865 14.4907 15.283 14.5837 15.1921C15.0061 14.7835 15.4414 14.563 15.8593 14.5075C16.2702 14.4529 16.7139 14.5508 17.1778 14.8693C18.2146 15.5894 19.1818 16.3971 20.0677 17.2827L20.069 17.284C20.4285 17.6406 20.5184 17.9368 20.497 18.1742C20.4741 18.4277 20.3134 18.7434 19.9079 19.1035L19.9076 19.1038C19.8493 19.1556 19.7764 19.2164 19.6969 19.2827C19.5298 19.422 19.3332 19.5861 19.1792 19.7443Z" stroke="#CC0A3B"/>
+              </svg>
+              +7 (964) 987-16-44</a></li>
+            </ul>
+          </div>
+          <div class="header-contacts header-contacts-2">
+            <ul>
+              <li><a
+                class=""
+                target="_blank"
+                rel="nofollow"
+                href="https://yandex.ru/maps/org/davita/119351055942/?ll=50.190321%2C53.223564&mode=search&sctx=ZAAAAAgBEAAaKAoSCeQR3EjZB0lAEUF4esY6qUpAEhIJa%2B%2Fh%2F3%2BN%2Fz8RTa7cJY745T8iBgABAgMEBSgKOABAmp0GSAFqAnJ1nQHNzEw9oAEAqAEAvQFkHrxuwgEGxqyCz7wD6gEA8gEA%2BAEAggIn0KDQvtGB0YHQuNGPLCDQodCw0LzQsNGA0LAg0LTQsNCy0LjRgtCwigIAkgICNTE%3D&sll=50.190321%2C53.223564&source=wizgeo&sspn=0.004215%2C0.001471&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%20%D0%B4%D0%B0%D0%B2%D0%B8%D1%82%D0%B0&utm_medium=maps-desktop&utm_source=serp&z=18.87"
+              >
+                <svg width="20" height="29" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.966 16.354C15.066 16.25 15.066 16.041 15.166 15.937C15.666 15.101 16.966 11.864 16.866 9.25295C16.866 7.26895 16.266 5.28295 14.966 3.71695C13.766 2.14995 11.966 1.21095 10.066 0.897951C6.26598 0.270952 2.26599 2.56895 1.26599 6.43295C0.765985 8.31295 0.765985 10.192 1.16599 12.072C2.26599 17.084 5.16599 21.262 8.26599 25.232C8.86598 25.962 8.96598 25.962 9.56598 25.126C12.266 21.576 13.466 19.278 14.966 16.354ZM9.36598 23.559C9.16599 23.873 8.96599 24.082 8.76599 24.396C5.56598 20.114 2.76599 15.936 1.86599 10.715C1.06599 6.53795 3.46599 2.88195 7.46599 1.94195C11.066 1.10695 14.866 3.50795 15.666 7.37195C15.966 8.93895 15.866 10.505 15.466 11.967C14.366 16.353 12.066 19.695 9.36598 23.559ZM12.066 11.027C12.266 10.61 12.266 10.088 12.266 9.56695C12.266 9.04395 12.166 8.62695 12.066 8.20895C11.866 7.79095 11.666 7.37295 11.266 7.05895C10.966 6.74595 10.566 6.43195 10.066 6.22295C9.66599 6.01395 9.16599 5.91095 8.66599 5.91095C8.16599 5.91095 7.76599 6.01395 7.26599 6.22295C6.86598 6.43295 6.46599 6.64195 6.16599 7.05995C5.86598 7.37295 5.56599 7.78995 5.46599 8.31195C5.36599 8.83395 5.26599 9.25195 5.26599 9.77495C5.26599 10.297 5.36599 10.715 5.46599 11.133C5.66599 11.55 5.86598 11.968 6.26599 12.281C6.56599 12.595 6.96599 12.907 7.46599 13.116C7.86599 13.325 8.36599 13.43 8.86599 13.43C9.36599 13.43 9.76598 13.325 10.266 13.116C10.666 12.907 11.066 12.595 11.366 12.281C11.666 11.864 11.966 11.445 12.066 11.027ZM6.76599 11.133C6.46598 10.715 6.36598 10.193 6.26599 9.67095C6.26599 9.35695 6.26599 9.04395 6.46599 8.62595C6.56599 8.31295 6.76599 7.99895 6.96599 7.78995C7.16599 7.57995 7.46598 7.37195 7.76599 7.26795C8.06599 7.16295 8.36598 7.05995 8.76599 7.05995C9.26599 7.05995 9.76599 7.16395 10.166 7.47695C10.566 7.79095 10.866 8.10395 11.066 8.62695C11.266 9.04395 11.366 9.56695 11.266 10.088C11.166 10.611 10.966 11.028 10.566 11.445C10.266 11.863 9.76598 12.073 9.26598 12.177C8.76598 12.281 8.26599 12.28 7.86599 12.072C7.46599 11.862 7.06599 11.55 6.76599 11.132V11.133Z" fill="#CC0A3B"/>
+                </svg>
+                Самара, ТЦ "Мост"</a></li>
+              <li><a class="" href="tel:+79063411121">
+                <svg width="21" height="21" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.1792 19.7443C17.9605 20.9943 16.3998 21.4487 14.8379 21.496L14.6083 21.4982C13.3843 21.5101 12.2368 21.1925 11.1052 20.665L11.105 20.6649C8.64489 19.5192 6.68152 17.7539 4.86148 15.738C3.27716 13.9818 1.93963 12.1077 1.11616 9.94074C0.297215 7.78249 0.251485 5.66903 1.24023 3.57622L1.24047 3.57572C1.82149 2.34238 2.88191 1.52306 4.08244 0.6723L4.08251 0.672401L4.09145 0.665765C4.247 0.550246 4.4438 0.49049 4.64565 0.501233C4.84744 0.511975 5.03509 0.592126 5.17513 0.722271L5.18135 0.728054L5.18777 0.733623C6.49435 1.86765 7.4225 3.24131 7.82719 4.87952L7.82752 4.88085C7.95687 5.39836 7.78389 5.88488 7.29436 6.27538L7.29378 6.27585C6.87219 6.61319 6.45095 6.94478 6.02811 7.27069C5.54211 7.64275 5.17627 8.05183 5.01223 8.56845C4.8473 9.08786 4.91307 9.63102 5.11047 10.214C5.49009 11.3449 6.17035 12.301 6.93564 13.1254C7.70154 13.9547 8.53949 14.7196 9.35921 15.4679C9.51887 15.6136 9.67784 15.7588 9.83545 15.9036C10.1205 16.1665 10.4783 16.3471 10.7548 16.4867C10.7752 16.497 10.7952 16.5071 10.8147 16.517L10.8163 16.5178C11.292 16.7571 11.7822 16.8569 12.2697 16.7925C12.7558 16.7283 13.1995 16.506 13.5929 16.1662C13.832 15.9621 14.0691 15.7176 14.2848 15.4953C14.3903 15.3865 14.4907 15.283 14.5837 15.1921C15.0061 14.7835 15.4414 14.563 15.8593 14.5075C16.2702 14.4529 16.7139 14.5508 17.1778 14.8693C18.2146 15.5894 19.1818 16.3971 20.0677 17.2827L20.069 17.284C20.4285 17.6406 20.5184 17.9368 20.497 18.1742C20.4741 18.4277 20.3134 18.7434 19.9079 19.1035L19.9076 19.1038C19.8493 19.1556 19.7764 19.2164 19.6969 19.2827C19.5298 19.422 19.3332 19.5861 19.1792 19.7443Z" stroke="#CC0A3B"/>
+                </svg>
+                +7 (906) 341-11-21</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--/контакты магазинов-->
       </div>
+      <!--//*нижнее меню*-->
     </header>
-
+    
     <!-- Плавающая кнопка справа сбоку страницы -->
 
     <aside class="aside">
@@ -242,31 +279,38 @@
           <div class="card card-body">
             <ul class="float-block-list">
               <li>
-                <a class="phone" href="tel:+79649871644">
-                    <img src="assets/icons/phone.png" alt="phone" />
-                    <span class="phone_text">Позвонить</span>                          
-                </a>
-              </li>
-              <li>
                 <a
                   class="telegram"
                   href="https://tlgg.ru/@DaVita_Samara"
                   target="_blank"
+                  rel="nofollow"
                 >
-                  <img src="assets/icons/message-teleg.png" alt="telegram" />
+                  <img src="assets/icons/message-teleg.png" alt="telegram" rel="nofollow" />
                   <span>Telegram</span>
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/79649871644" target="_blank">
+                <a href="http://m.me/davitamebelgudok" target="_blank" rel="nofollow">
+                  <img src="assets/icons/message-face.png" alt="facebook" />
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/79649871644" target="_blank" rel="nofollow">
                   <img src="assets/icons/message-whatsapp.png" alt="whatsapp" />
                   <span>WhatsApp</span>
                 </a>
               </li>
               <li>
-                <a href="https://viber.click/79649871644" target="_blank">
+                <a href="https://viber.click/79649871644" target="_blank" rel="nofollow">
                   <img src="assets/icons/message-viber.png" alt="viber" />
                   <span>Viber</span>
+                </a>
+              </li>
+              <li>
+                <a class="phone" href="tel:+79649871644">
+                    <img src="assets/icons/phone.png" alt="phone" />
+                    <span class="phone_text">Позвонить</span>                          
                 </a>
               </li>
             </ul>
@@ -348,7 +392,7 @@
       <!-- О нас -->
 
       <section id="about" class="anchor about">
-        <div class="container-md">
+        <div class="container-lg">
           <div class="section-title">
             <h1>О нас</h1>
           </div>
@@ -486,7 +530,7 @@
           <div class="instagram">
             <div class="section-title">
               <a
-                href="https://www.instagram.com/davita_mebelsamara/"
+                href="https://www.instagram.com/davita.smr/"
                 target="_blank"
                 rel="nofollow"
                 class="header-insta"
@@ -500,7 +544,14 @@
                 <h2>Наш Инстаграм - про мебель и про жизнь</h2>
               </a>
             </div>
-            <div id="instfeed" class="instfeed"></div>
+            
+            <div class="instatape border-3 color-3" feed="2" post="2" count="12" profile="1" button="1" g_pd="1" g_lg="6" g_md="3" g_sm="3" g_xs="2" >
+              <span class="preloader"></span>
+            </div>
+
+
+
+            <br class="clear">
           </div>
         </div>
       </section>
@@ -521,34 +572,32 @@
                 </div>
                 <div class="col-md-9 col-lg-12 col-xl-7">
                   <div class="card-body">
-                    <h5 class="card-title">Скидки продлены</h5>
+                    <h5 class="card-title">Скидки в декабре</h5>
                     <p class="card-text">
-                      В мае увеличенную 40% скидку фабрика дала на кухни Тиффани, Графит, Виктория и Шарлотта а также на спальню Тиффани; гостиные и прихожие - Тиффани и Фреска; детскую серию Эверест. На все остальные кухни также идёт весомая 30-% скидка.
+                      Максимальную 50% скидку фабрика Витра даёте на кухни  Тиффани, Бруклин, Графит и Малана! Еще на целую пачку кухонь будет действовать скидка 40% - Бьянка, Палермо, Рио, Аврора, Виктори, Каролина и Шарлотта.
                     </p>
                     <p class="card-text">
-                      <small class="text-muted">30 апреля</small>
+                      <small class="text-muted">02 декабря</small>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- Новость 2 -->
             <div class="card col-md-12">
               <div class="row g-0 justify-content-lg-between">
                 <div class="img-wrapper col-md-3 col-lg-12 col-xl-5">
-                  <img src="assets/images/news/byanka.png" alt="news-img" />
+                  <img src="assets/images/news/store.png" alt="news-img" />
                 </div>
                 <div class="col-md-9 col-lg-12 col-xl-7">
                   <div class="card-body">
-                    <h5 class="card-title">Новая кухня</h5>
+                    <h5 class="card-title">Новый магазин </h5>
                     <p class="card-text">
-                      Очередная новинка – кухня Бьянка. Белый цвет с
-                      геометрическим рисунком в духе минимализма – в общем, идём
-                      в ногу со временем! Данная кухонная серия уже имеется на
-                      складе в Самаре.
+                      Мы открылись в топовом самарском мебельном центре - В Хоффе на Московском ш. 106. Самый центр города, удобная транспортная доступность, большая стоянка - всё для Вас!
                     </p>
                     <p class="card-text">
-                      <small class="text-muted">1 марта</small>
+                      <small class="text-muted">01 декабря</small>
                     </p>
                   </div>
                 </div>
@@ -670,43 +719,50 @@
         <div class="reviews-slider-wrapper">
           <div class="reviews-slider-content">
             <div class="container-md">    
-              <div class="reviews-slider">
+              <div class="reviews-slider" id="reviews-slider">
      
                 <div>
                   <iframe
+                  class="yt-player"
+                    id="video-1"
                     width="100%"
                     height="315"
                     src="https://www.youtube.com/embed/ja6Ru9u31Kg"
                     title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0"                    
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>
   
                 <div>
                   <iframe
+                  class="yt-player"
+                  id="video-2"
                     width="100%"
                     height="315"
                     src="https://www.youtube.com/embed/n3YYTosFPiY"
                     title="YouTube video player"
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>     
         
                 <div>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/GLyz8KU62hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="yt-player" id="video-3" width="560" height="315" src="https://www.youtube.com/embed/GLyz8KU62hM" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>    
          
                 <div>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/x1NRqQOtwNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="yt-player" id="video-4" width="560" height="315" src="https://www.youtube.com/embed/x1NRqQOtwNo" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>     
         
                 <div>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/rpSusZtxxd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>   
+                  <iframe class="yt-player" id="video-5" width="560" height="315" src="https://www.youtube.com/embed/rpSusZtxxd8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>  
+                
+                <div><iframe class="yt-player" id="video-6" width="560" height="315" src="https://www.youtube.com/embed/u86CNqUfXa8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe class="yt-player" id="video-7" width="560" height="315" src="https://www.youtube.com/embed/ujC3-EYA5-Q" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
               </div>
             </div>
           </div>
@@ -984,6 +1040,82 @@
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading7">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse7"
+                  aria-expanded="false"
+                  aria-controls="collapse7"
+                >
+                  Вы работаете только по Самаре?
+                </button>
+              </h2>
+              <div
+                id="collapse7"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading7"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Мы можем отправить ваш заказ по всей России через транспортные компании. Стоимость доставки Вы оплатите непосредственно при получении на терминале транспортной компании в вашем городе. Также Вы сможете там заказать доставку до квартиры. При доставке транспортными компаниями мебель отправляется в жёсткой упаковке. Условия сборки далее 40 км. от Самары оговариваются отдельно. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse8"
+                  aria-expanded="false"
+                  aria-controls="collapse8"
+                >
+                  Можно ли купить мебель на компанию с НДС?
+                </button>
+              </h2>
+              <div
+                id="collapse8"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading8"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">                 
+
+
+Да, можно. Мы продадим Вам мебель по официальным ценам фабрики с включенным НДС.
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading9">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse9"
+                  aria-expanded="false"
+                  aria-controls="collapse9"
+                >
+                  Можете ли Вы помочь с комплектованием кухни встраиваемой техникой - варочной панелью, духовкой, вытяжкой и посудомойкой?
+                </button>
+              </h2>
+              <div
+                id="collapse9"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading9"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">           
+
+Да, через партнерские сайты мы подберём для вас всю необходимую технику по официальным ценам производителей. В этом случае Вы ещё получите от нас скидку на установку и подключение.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -997,72 +1129,81 @@
           <h1>Контакты</h1>
         </div>
       </div>
-
+      
       <div class="map">
-        <a
-          class="dg-widget-link"
-          rel="nofollow"
-          href="https://2gis.ru/samara/firm/70000001034625910/center/50.12580871582032,53.187380469899345/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
-          >Посмотреть на карте Самары</a
-        >
-        <div class="dg-widget-link">
-          <a
-            href="http://2gis.ru/samara/firm/70000001034625910/photos/70000001034625910/center/50.12580871582032,53.187380469899345/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos"
-            >Фотографии компании</a
-          >
-        </div>
-        <div class="dg-widget-link">
-          <a
-            rel="nofollow"
-            href="http://2gis.ru/samara/center/50.125779,53.186711/zoom/16/routeTab/rsType/bus/to/50.125779,53.186711╎DaVita-мебель, официальный представитель?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
-            >Найти проезд до DaVita-мебель, официальный представитель</a
-          >
-        </div>
-        <script
-          charset="utf-8"
-          src="https://widgets.2gis.com/js/DGWidgetLoader.js"
-        ></script>
-        <script charset="utf-8">
-          new DGWidgetLoader({
-            width: "100%",
-            height: 400,
-            borderColor: "rgba(238, 238, 238, 0.9);",
-            pos: {
-              lat: 53.187380469899345,
-              lon: 50.12580871582032,
-              zoom: 16,
-            },
-            opt: { city: "samara" },
-            org: [{ id: "70000001034625910" }],
-            scrollWheelZoom: false,
-            //tap: false,
-          });
-        </script>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad9ae9075d8c14fa50e4261b4f1011f975898206b9ac8478c14f0903f1500b0b3&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
 
       <div class="footer-contacts__wrapper">
         <div class="container-md">
           <div class="contacts">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" style="column-gap: 15px;">
+              <!-- первая колонка -->
               <div
                 class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 mr-0 px-0"
               >
                 <div class="contacts-1">
                   <h6 class="contacts-1-title">Контакты</h6>
+                  <!-- <div class="contacts-select">
+                    <select class="form-select mb-1" aria-label="store">
+                      <option class="form-option" value="1" selected>ДаВита (Гудок)</option>
+                      <option class="form-option" value="2">ДаВита (Хофф)</option>
+                    </select>
+                  </div> -->
+                  
                   <div class="contacts-list-wrapper">
                     <ul class="contacts-1-list-1">
+                      <li class="contacts-item-store">Самара, ТЦ "Гудок"</li>
                       <li class="contacts-item-address">
-                        <div class="address-img">
-                          <img src="assets/icons/address.png" alt="address"  width="22px" height="auto"/>
+                        <div class="contacts-icons address-img">
+                          <svg width="20" height="29" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.966 16.354C15.066 16.25 15.066 16.041 15.166 15.937C15.666 15.101 16.966 11.864 16.866 9.25295C16.866 7.26895 16.266 5.28295 14.966 3.71695C13.766 2.14995 11.966 1.21095 10.066 0.897951C6.26598 0.270952 2.26599 2.56895 1.26599 6.43295C0.765985 8.31295 0.765985 10.192 1.16599 12.072C2.26599 17.084 5.16599 21.262 8.26599 25.232C8.86598 25.962 8.96598 25.962 9.56598 25.126C12.266 21.576 13.466 19.278 14.966 16.354ZM9.36598 23.559C9.16599 23.873 8.96599 24.082 8.76599 24.396C5.56598 20.114 2.76599 15.936 1.86599 10.715C1.06599 6.53795 3.46599 2.88195 7.46599 1.94195C11.066 1.10695 14.866 3.50795 15.666 7.37195C15.966 8.93895 15.866 10.505 15.466 11.967C14.366 16.353 12.066 19.695 9.36598 23.559ZM12.066 11.027C12.266 10.61 12.266 10.088 12.266 9.56695C12.266 9.04395 12.166 8.62695 12.066 8.20895C11.866 7.79095 11.666 7.37295 11.266 7.05895C10.966 6.74595 10.566 6.43195 10.066 6.22295C9.66599 6.01395 9.16599 5.91095 8.66599 5.91095C8.16599 5.91095 7.76599 6.01395 7.26599 6.22295C6.86598 6.43295 6.46599 6.64195 6.16599 7.05995C5.86598 7.37295 5.56599 7.78995 5.46599 8.31195C5.36599 8.83395 5.26599 9.25195 5.26599 9.77495C5.26599 10.297 5.36599 10.715 5.46599 11.133C5.66599 11.55 5.86598 11.968 6.26599 12.281C6.56599 12.595 6.96599 12.907 7.46599 13.116C7.86599 13.325 8.36599 13.43 8.86599 13.43C9.36599 13.43 9.76598 13.325 10.266 13.116C10.666 12.907 11.066 12.595 11.366 12.281C11.666 11.864 11.966 11.445 12.066 11.027ZM6.76599 11.133C6.46598 10.715 6.36598 10.193 6.26599 9.67095C6.26599 9.35695 6.26599 9.04395 6.46599 8.62595C6.56599 8.31295 6.76599 7.99895 6.96599 7.78995C7.16599 7.57995 7.46598 7.37195 7.76599 7.26795C8.06599 7.16295 8.36598 7.05995 8.76599 7.05995C9.26599 7.05995 9.76599 7.16395 10.166 7.47695C10.566 7.79095 10.866 8.10395 11.066 8.62695C11.266 9.04395 11.366 9.56695 11.266 10.088C11.166 10.611 10.966 11.028 10.566 11.445C10.266 11.863 9.76598 12.073 9.26598 12.177C8.76598 12.281 8.26599 12.28 7.86599 12.072C7.46599 11.862 7.06599 11.55 6.76599 11.132V11.133Z" fill="#CC0A3B"/>
+                          </svg>
                         </div>
-                        <div class="address-text">
+                        <div id="footerAddress" class="address-text">
                           <p>г.Самара, ул. Красноармейская, 131</p>
                           <p>ТЦ "Гудок", цокольный этаж</p>
                           <p>напротив гипермаркета "Лента"</p>
                         </div>
                       </li>
+                      <li class="contacts-item-phone">
+                        <div class="contacts-icons">
+                          <svg width="21" height="21" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.1792 19.7443C17.9605 20.9943 16.3998 21.4487 14.8379 21.496L14.6083 21.4982C13.3843 21.5101 12.2368 21.1925 11.1052 20.665L11.105 20.6649C8.64489 19.5192 6.68152 17.7539 4.86148 15.738C3.27716 13.9818 1.93963 12.1077 1.11616 9.94074C0.297215 7.78249 0.251485 5.66903 1.24023 3.57622L1.24047 3.57572C1.82149 2.34238 2.88191 1.52306 4.08244 0.6723L4.08251 0.672401L4.09145 0.665765C4.247 0.550246 4.4438 0.49049 4.64565 0.501233C4.84744 0.511975 5.03509 0.592126 5.17513 0.722271L5.18135 0.728054L5.18777 0.733623C6.49435 1.86765 7.4225 3.24131 7.82719 4.87952L7.82752 4.88085C7.95687 5.39836 7.78389 5.88488 7.29436 6.27538L7.29378 6.27585C6.87219 6.61319 6.45095 6.94478 6.02811 7.27069C5.54211 7.64275 5.17627 8.05183 5.01223 8.56845C4.8473 9.08786 4.91307 9.63102 5.11047 10.214C5.49009 11.3449 6.17035 12.301 6.93564 13.1254C7.70154 13.9547 8.53949 14.7196 9.35921 15.4679C9.51887 15.6136 9.67784 15.7588 9.83545 15.9036C10.1205 16.1665 10.4783 16.3471 10.7548 16.4867C10.7752 16.497 10.7952 16.5071 10.8147 16.517L10.8163 16.5178C11.292 16.7571 11.7822 16.8569 12.2697 16.7925C12.7558 16.7283 13.1995 16.506 13.5929 16.1662C13.832 15.9621 14.0691 15.7176 14.2848 15.4953C14.3903 15.3865 14.4907 15.283 14.5837 15.1921C15.0061 14.7835 15.4414 14.563 15.8593 14.5075C16.2702 14.4529 16.7139 14.5508 17.1778 14.8693C18.2146 15.5894 19.1818 16.3971 20.0677 17.2827L20.069 17.284C20.4285 17.6406 20.5184 17.9368 20.497 18.1742C20.4741 18.4277 20.3134 18.7434 19.9079 19.1035L19.9076 19.1038C19.8493 19.1556 19.7764 19.2164 19.6969 19.2827C19.5298 19.422 19.3332 19.5861 19.1792 19.7443Z" stroke="#CC0A3B"/>
+                          </svg>
+                        </div>
+                        <a class="phone"  href="tel:+79649871644">
+                          <span class="phone_text" id="footerTel">+7 (964) 987-16-44</span>
+                          <span class="phone_subtext">салон</span>
+                        </a>
+                      </li>
+                      <li class="contacts-item-store">Самара, ТЦ "Мост"</li>
+                      <li class="contacts-item-address">
+                        <div class="contacts-icons address-img">
+                          <svg width="20" height="29" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.966 16.354C15.066 16.25 15.066 16.041 15.166 15.937C15.666 15.101 16.966 11.864 16.866 9.25295C16.866 7.26895 16.266 5.28295 14.966 3.71695C13.766 2.14995 11.966 1.21095 10.066 0.897951C6.26598 0.270952 2.26599 2.56895 1.26599 6.43295C0.765985 8.31295 0.765985 10.192 1.16599 12.072C2.26599 17.084 5.16599 21.262 8.26599 25.232C8.86598 25.962 8.96598 25.962 9.56598 25.126C12.266 21.576 13.466 19.278 14.966 16.354ZM9.36598 23.559C9.16599 23.873 8.96599 24.082 8.76599 24.396C5.56598 20.114 2.76599 15.936 1.86599 10.715C1.06599 6.53795 3.46599 2.88195 7.46599 1.94195C11.066 1.10695 14.866 3.50795 15.666 7.37195C15.966 8.93895 15.866 10.505 15.466 11.967C14.366 16.353 12.066 19.695 9.36598 23.559ZM12.066 11.027C12.266 10.61 12.266 10.088 12.266 9.56695C12.266 9.04395 12.166 8.62695 12.066 8.20895C11.866 7.79095 11.666 7.37295 11.266 7.05895C10.966 6.74595 10.566 6.43195 10.066 6.22295C9.66599 6.01395 9.16599 5.91095 8.66599 5.91095C8.16599 5.91095 7.76599 6.01395 7.26599 6.22295C6.86598 6.43295 6.46599 6.64195 6.16599 7.05995C5.86598 7.37295 5.56599 7.78995 5.46599 8.31195C5.36599 8.83395 5.26599 9.25195 5.26599 9.77495C5.26599 10.297 5.36599 10.715 5.46599 11.133C5.66599 11.55 5.86598 11.968 6.26599 12.281C6.56599 12.595 6.96599 12.907 7.46599 13.116C7.86599 13.325 8.36599 13.43 8.86599 13.43C9.36599 13.43 9.76598 13.325 10.266 13.116C10.666 12.907 11.066 12.595 11.366 12.281C11.666 11.864 11.966 11.445 12.066 11.027ZM6.76599 11.133C6.46598 10.715 6.36598 10.193 6.26599 9.67095C6.26599 9.35695 6.26599 9.04395 6.46599 8.62595C6.56599 8.31295 6.76599 7.99895 6.96599 7.78995C7.16599 7.57995 7.46598 7.37195 7.76599 7.26795C8.06599 7.16295 8.36598 7.05995 8.76599 7.05995C9.26599 7.05995 9.76599 7.16395 10.166 7.47695C10.566 7.79095 10.866 8.10395 11.066 8.62695C11.266 9.04395 11.366 9.56695 11.266 10.088C11.166 10.611 10.966 11.028 10.566 11.445C10.266 11.863 9.76598 12.073 9.26598 12.177C8.76598 12.281 8.26599 12.28 7.86599 12.072C7.46599 11.862 7.06599 11.55 6.76599 11.132V11.133Z" fill="#CC0A3B"/>
+                          </svg>
+                        </div>
+                        <div id="footerAddress" class="address-text">
+                          <p>г.Самара, Московское шоссе, 106</p>
+                          <p>ТЦ "Мост", 1-й этаж</p>
+                          <p>гипермаркет мебели "Хофф"</p>
+                        </div>
+                      </li>
+                      <li class="contacts-item-phone">
+                        <div class="contacts-icons">
+                          <svg width="21" height="21" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.1792 19.7443C17.9605 20.9943 16.3998 21.4487 14.8379 21.496L14.6083 21.4982C13.3843 21.5101 12.2368 21.1925 11.1052 20.665L11.105 20.6649C8.64489 19.5192 6.68152 17.7539 4.86148 15.738C3.27716 13.9818 1.93963 12.1077 1.11616 9.94074C0.297215 7.78249 0.251485 5.66903 1.24023 3.57622L1.24047 3.57572C1.82149 2.34238 2.88191 1.52306 4.08244 0.6723L4.08251 0.672401L4.09145 0.665765C4.247 0.550246 4.4438 0.49049 4.64565 0.501233C4.84744 0.511975 5.03509 0.592126 5.17513 0.722271L5.18135 0.728054L5.18777 0.733623C6.49435 1.86765 7.4225 3.24131 7.82719 4.87952L7.82752 4.88085C7.95687 5.39836 7.78389 5.88488 7.29436 6.27538L7.29378 6.27585C6.87219 6.61319 6.45095 6.94478 6.02811 7.27069C5.54211 7.64275 5.17627 8.05183 5.01223 8.56845C4.8473 9.08786 4.91307 9.63102 5.11047 10.214C5.49009 11.3449 6.17035 12.301 6.93564 13.1254C7.70154 13.9547 8.53949 14.7196 9.35921 15.4679C9.51887 15.6136 9.67784 15.7588 9.83545 15.9036C10.1205 16.1665 10.4783 16.3471 10.7548 16.4867C10.7752 16.497 10.7952 16.5071 10.8147 16.517L10.8163 16.5178C11.292 16.7571 11.7822 16.8569 12.2697 16.7925C12.7558 16.7283 13.1995 16.506 13.5929 16.1662C13.832 15.9621 14.0691 15.7176 14.2848 15.4953C14.3903 15.3865 14.4907 15.283 14.5837 15.1921C15.0061 14.7835 15.4414 14.563 15.8593 14.5075C16.2702 14.4529 16.7139 14.5508 17.1778 14.8693C18.2146 15.5894 19.1818 16.3971 20.0677 17.2827L20.069 17.284C20.4285 17.6406 20.5184 17.9368 20.497 18.1742C20.4741 18.4277 20.3134 18.7434 19.9079 19.1035L19.9076 19.1038C19.8493 19.1556 19.7764 19.2164 19.6969 19.2827C19.5298 19.422 19.3332 19.5861 19.1792 19.7443Z" stroke="#CC0A3B"/>
+                          </svg>
+                        </div>
+                        <a class="phone"  href="tel:+79063411121">
+                          <span class="phone_text" id="footerTel">+7 (906) 341-11-21</span>
+                          <span class="phone_subtext">салон</span>
+                        </a>
+                      </li>
+                      <hr style="margin: 5px 0">
                       <li class="contacts-item-clock">
-                        <div class="clock-img">
+                        <div class="contacts-icons clock-img">
                           <img
                             src="assets/icons/clock.svg"
                             alt="work time"
@@ -1075,23 +1216,27 @@
                       </li>
 
                       <li class="contacts-item-phone">
-                        <img src="assets/icons/t.png" alt="phone"  width="33px" height="auto"/>
+                        <div class="contacts-icons">
+                          <svg width="21" height="21" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.1792 19.7443C17.9605 20.9943 16.3998 21.4487 14.8379 21.496L14.6083 21.4982C13.3843 21.5101 12.2368 21.1925 11.1052 20.665L11.105 20.6649C8.64489 19.5192 6.68152 17.7539 4.86148 15.738C3.27716 13.9818 1.93963 12.1077 1.11616 9.94074C0.297215 7.78249 0.251485 5.66903 1.24023 3.57622L1.24047 3.57572C1.82149 2.34238 2.88191 1.52306 4.08244 0.6723L4.08251 0.672401L4.09145 0.665765C4.247 0.550246 4.4438 0.49049 4.64565 0.501233C4.84744 0.511975 5.03509 0.592126 5.17513 0.722271L5.18135 0.728054L5.18777 0.733623C6.49435 1.86765 7.4225 3.24131 7.82719 4.87952L7.82752 4.88085C7.95687 5.39836 7.78389 5.88488 7.29436 6.27538L7.29378 6.27585C6.87219 6.61319 6.45095 6.94478 6.02811 7.27069C5.54211 7.64275 5.17627 8.05183 5.01223 8.56845C4.8473 9.08786 4.91307 9.63102 5.11047 10.214C5.49009 11.3449 6.17035 12.301 6.93564 13.1254C7.70154 13.9547 8.53949 14.7196 9.35921 15.4679C9.51887 15.6136 9.67784 15.7588 9.83545 15.9036C10.1205 16.1665 10.4783 16.3471 10.7548 16.4867C10.7752 16.497 10.7952 16.5071 10.8147 16.517L10.8163 16.5178C11.292 16.7571 11.7822 16.8569 12.2697 16.7925C12.7558 16.7283 13.1995 16.506 13.5929 16.1662C13.832 15.9621 14.0691 15.7176 14.2848 15.4953C14.3903 15.3865 14.4907 15.283 14.5837 15.1921C15.0061 14.7835 15.4414 14.563 15.8593 14.5075C16.2702 14.4529 16.7139 14.5508 17.1778 14.8693C18.2146 15.5894 19.1818 16.3971 20.0677 17.2827L20.069 17.284C20.4285 17.6406 20.5184 17.9368 20.497 18.1742C20.4741 18.4277 20.3134 18.7434 19.9079 19.1035L19.9076 19.1038C19.8493 19.1556 19.7764 19.2164 19.6969 19.2827C19.5298 19.422 19.3332 19.5861 19.1792 19.7443Z" stroke="#CC0A3B"/>
+                          </svg>
+                        </div>
+                        
                         <a class="phone" href="tel:+79277769678">
                           <span class="phone_text">+7 (927) 776-96-78</span>
                           <span class="phone_subtext">замерщик</span>
                         </a>
                       </li>
-                      <li class="contacts-item-phone">
-                        <a class="phone" href="tel:+79649871644">
-                          <img src="assets/icons/t.png" alt="phone"  width="33px" height="auto"/>
-                          <span class="phone_text">+7 (964) 987-16-44</span>
-                          <span class="phone_subtext">салон</span>
-                        </a>
-                      </li>
+                      
 
                       <li>
                         <div class="phone_img">
-                          <img src="assets/icons/email.png" alt="email" />
+                          <div class="contacts-icons">
+                            <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0141 1.56401L23.9871 1.58701L24.0031 1.63901V14.359C23.9931 14.379 23.9781 14.397 23.9731 14.419C23.6831 15.486 23.0251 15.995 21.9401 15.995C19.1261 15.993 16.3121 15.995 13.4981 15.995C9.97406 15.993 6.44806 15.995 2.92406 15.992C2.51121 15.999 2.10742 15.8706 1.77442 15.6265C1.44142 15.3823 1.19754 15.0359 1.08006 14.64C1.05326 14.5464 1.02559 14.4531 0.997061 14.36V1.64001C1.00506 1.62401 1.01406 1.61001 1.02106 1.59401L0.987061 1.56401L1.07106 1.47701C1.28206 0.737014 1.73806 0.265014 2.40006 0.0900142L2.48206 0.00701416L2.55506 0.0690142C2.70506 0.0390142 2.84706 0.00201416 3.01506 0.00201416H22.0541C22.1941 0.00201416 22.3221 0.0360142 22.4541 0.0620142L22.5191 0.00601416L22.5931 0.0830142C23.2031 0.247014 23.6931 0.679014 23.9011 1.29301C23.9261 1.36501 23.9461 1.43901 23.9671 1.51301L24.0151 1.56301L24.0141 1.56401ZM3.00006 3.26401V14C2.47606 14 3.00006 14.526 3.00006 14H22.0001C22.0001 14.457 22.4601 14 22.0001 14V3.26301L12.8321 10.993L12.5001 10.647L12.1681 10.993L3.00006 3.26301V3.26401ZM4.84606 2.00001L12.5001 8.45401L20.1541 2.00001H4.84606Z" fill="#CC0A3B" stroke-width="2"/>
+                            </svg>
+                          </div>
+                          
                         </div>
                         <div class="phone_text">davita@etalon-samara.ru</div>
                       </li>
@@ -1099,7 +1244,7 @@
                   </div>
                 </div>
               </div>
-
+              <!-- вторая колонка -->
               <div
                 class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 mr-0 px-0"
               >
@@ -1117,7 +1262,7 @@
                             rel="nofollow"
                             data-link="https://davitamebel.ru/"
                           >
-                            <div>
+                            <div class="contacts-icons">
                               <img
                                 src="assets/icons/davita.png"
                                 alt="davita-mebel официальный сайт"
@@ -1137,7 +1282,7 @@
                             target="_blank"
                             rel="nofollow"
                           >
-                            <div>
+                            <div class="contacts-icons">
                               <img
                                 src="assets/icons/etalon.png"
                                 alt="etalon-samara mebel"
@@ -1160,13 +1305,16 @@
                             target="_blank"
                             rel="nofollow"
                           >
-                            <div>
-                              <img
+                            <div class="contacts-icons">
+                              <svg width="25" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.925 22 0 17.075 0 11C0 4.925 4.925 0 11 0C17.075 0 22 4.925 22 11C22 17.075 17.075 22 11 22ZM11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1ZM11.007 15.996C10.685 15.996 10.435 15.896 10.259 15.698C10.081 15.498 9.993 15.218 9.993 14.855C9.993 14.48 10.079 14.195 10.253 14.003C10.425 13.811 10.676 13.715 11.006 13.715C11.326 13.715 11.571 13.813 11.746 14.01C11.92 14.207 12.008 14.49 12.008 14.855C12.008 15.209 11.918 15.487 11.742 15.691C11.565 15.895 11.32 15.997 11.005 15.997L11.007 15.996ZM10.311 12.56L10.018 6.005H12.01L11.715 12.56H10.31H10.311Z" fill="#CC0A3B"/>
+                              </svg>
+                              <!-- <img
                                 src="assets/icons/danger.png"
                                 alt="crash tests videos"
                                 width="25px"
                                 height="25px"
-                              />
+                              /> -->
                             </div>
                             <div>
                               <span>КРАШ-ТЕСТЫ</span>
@@ -1180,13 +1328,10 @@
                             target="_blank"
                             rel="nofollow"
                           >
-                            <div>
-                              <img
-                                src="assets/icons/3D.png"
-                                alt="3D planner"
-                                width="25px"
-                                height="20px"
-                              />
+                            <div class="contacts-icons">
+                              <svg width="25" height="22" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9 6.25151C16.9 8.21435 16.4453 9.72866 15.536 10.7905C14.6267 11.8537 13.3489 12.3846 11.7014 12.3846H8.49998V0.615353H11.9251C13.5137 0.615353 14.7391 1.0992 15.6043 2.06428C16.4684 3.03066 16.9 4.42597 16.9 6.25151ZM14.8 6.38358C14.8 5.31389 14.5448 4.52143 14.0335 4.00489C13.5242 3.48835 12.7493 3.23074 11.7088 3.23074H10.6V9.7692H11.4473C12.6034 9.7692 13.4518 9.49066 13.9904 8.93489C14.5301 8.37912 14.8 7.52912 14.8 6.38489V6.38358ZM6.14062 3.26212C6.14062 3.9722 5.97473 4.58158 5.64083 5.09028C5.30798 5.60028 4.82603 5.96905 4.19603 6.19789V6.24497C5.66498 6.48689 6.39998 7.3892 6.39998 8.95451C6.39998 10.0203 6.07553 10.8572 5.42768 11.4679C4.77878 12.0786 3.87788 12.3846 2.72498 12.3846C2.25143 12.3846 1.81148 12.3401 1.40933 12.2512C0.960663 12.1459 0.5219 11.9833 0.0999756 11.766L0.0999756 9.19774C0.485326 9.45274 0.876976 9.64235 1.27703 9.76528C1.67603 9.8882 2.04563 9.94835 2.38268 9.94835C2.90453 9.94835 3.28568 9.8542 3.52403 9.66328C3.76343 9.47235 3.88208 9.1742 3.88208 8.76751C3.88208 8.45366 3.82013 8.21174 3.69518 8.04305C3.57128 7.87305 3.36968 7.74489 3.09353 7.65859C2.81633 7.57228 2.45513 7.52912 2.00888 7.52912H1.46708V5.20535H2.02148C3.22898 5.20535 3.83378 4.80389 3.83378 3.99966C3.83378 3.69628 3.74453 3.47266 3.56603 3.3262C3.38753 3.17974 3.14708 3.10651 2.84678 3.10651C2.28398 3.10651 1.70228 3.35235 1.09958 3.84274L0.112576 1.77528C0.576676 1.35551 1.05338 1.05735 1.54163 0.880815C2.08769 0.694078 2.65226 0.604702 3.21848 0.615353C4.12988 0.615353 4.84598 0.850738 5.36258 1.3202C5.88128 1.79097 6.13958 2.43697 6.13958 3.26212H6.14062Z" fill="#CC0A3B"/>
+                              </svg>
                             </div>
                             <div>
                               <span>3D-ПРОГРАММА</span>
@@ -1198,6 +1343,8 @@
                   </div>
                 </div>
               </div>
+              
+              <!-- третья колонка -->
               <div class="col-8 col-sm-12">
                 <div class="contacts-3">
                   <h6 class="contacts-3-title">
@@ -1296,6 +1443,8 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+
+    <script src="instatape/js/instatape-script.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

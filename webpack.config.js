@@ -15,6 +15,8 @@ module.exports = {
     //filename: "./js/bundle.js",
     filename: "./js/[name].js",
     assetModuleFilename: "assets/bg/[name][ext]",
+    //publicPath: '/'
+    //publicPath: path.join(__dirname, 'dist')
   },
   devtool: "source-map",
   experiments: {
@@ -55,16 +57,19 @@ module.exports = {
       filename: "redirect.html",
       chunks: ["redirect"],
     }),
-    new MiniCssExtractPlugin(),
-    /*     new MiniCssExtractPlugin({
-      filename: "./css/[name].css",
-      //chunkFilename: "style",
-    }), */
+    //new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      //filename: "dist/css/[name][chunkhash].css",
+      filename: "[name][chunkhash].css",
+      //publicPath: ".",
+      //filename: ("css", "css/"),
+    }), 
     new CopyPlugin({
       patterns: [
         { from: "src/assets/images", to: "./assets/images" },
         { from: "src/assets/icons", to: "./assets/icons" },
         { from: "src/assets/favicon", to: "./assets/favicon" },
+        { from: "src/assets/bg", to: "./assets/bg" },
       ],
     }),
   ],

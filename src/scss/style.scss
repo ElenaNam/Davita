@@ -1,11 +1,13 @@
+@import "./media";
 @import "./mixins";
 @import "./variables";
+
 @import "./blocks/header.scss";
 @import "./blocks/aside.scss";
 @import "./blocks/main.scss";
 @import "./blocks/footer.scss";
 @import "./pages/redirect.scss";
-@import "./media";
+
 
 html {
   scroll-behavior: smooth;
@@ -44,7 +46,7 @@ a {
   padding-left: 0;
   padding-right: 0;
   @include for-size(lg_down) {
-    max-width: 100%;
+    //max-width: 100%;
   }
 }
 .anchor::before {
@@ -71,4 +73,9 @@ a {
   background-color: black;
   opacity: 0.5;
   z-index: 1020;
+}
+.hide-desc {
+  @include for-size(lg) {
+    display: none!important;
+  }
 }

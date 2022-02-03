@@ -1,15 +1,10 @@
 #contacts {
   width: 100%;
-  justify-content: space-between;
-
-  @include for-size(md_down) {
-    flex-direction: column;
-    justify-content: center;
-  }
 
   .footer-contacts__wrapper {
     width: 100%;
-    background: url("../assets/bg/wood.jpg");
+    background-color: #e6d4c0;
+    background-image: url("../assets/bg/wood.jpg");
     background-size: cover;
 
     padding-top: 10px;
@@ -24,7 +19,7 @@
   display: flex;
   font-size: 13px;
 
-  @include for-size(sm){
+  @include for-size(sm) {
     font-size: 14px;
     //padding: 0 10px;
   }
@@ -35,13 +30,56 @@
     padding: 0 25px;
     --bs-gutter-x: 0;
   }
+  &-select {
+    @include for-size(400) {
+      max-width: 320px;
+    }
+    @include for-size(md) {
+      max-width: 100%;
+    }
+    @include for-size(lg) {
+      max-width: 90%;
+    }
+  }
+  .form-select {
+    border: 1px solid $font-color-active-1;
+    background-color: #fefefe;
+    background-image: url("data:image/svg+xml,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'>\<path fill='none' stroke='%23cc0a3b' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>\</svg>");
+    font-size: 14px;
+    line-height: 1.25;
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(167, 25, 49, .25);
+    }
+
+  }
+  .form-option {
+    background-color: $font-color-layer!important;
+    background: white !important;
+    color: black !important;
+
+    &:checked {
+      background-color: $font-color-layer!important;
+    }
+  }
   &-list-wrapper {
     // min-height: 225px;
     height: 100%;
   }
+  &-item-store {
+    font-weight: bold;
+  }
+  hr {
+    margin: 5px 0;
+    @include for-size(lg) {
+      max-width: 80%;
+    }
+    
+  }
   @include for-size(xl) {
     display: block;
   }
+
 }
 
 .map {
@@ -64,10 +102,7 @@
     & .clock-text p {
       margin: 0;
     }
-    & .contacts-item-phone img,
-    .contacts-item-phone .phone_text {
-      padding: 5px;
-    }
+
   }
   &-list-2 {
     padding: 10px;
@@ -80,20 +115,13 @@
   }
   & ul li {
     @include contacts-item();
-
-    & div {
-      padding: 5px;
-    }
-    & .address-img {
-      height: fit-content;
-    }
     & .address-text p {
       margin-bottom: 0;
     }
     & a {
       @include link();
     }
-  }
+  }  
 }
 
 .contacts-2 {
@@ -119,9 +147,6 @@
         &:active {
           text-shadow: 1px 0 0;
         }
-        & div {
-          padding: 0 5px;
-        }
       }
     }
   }
@@ -143,11 +168,13 @@
       cursor: default;
       opacity: 0.8;
     }
-
-    & span {
-      margin-left: 5px;
-    }
   }
+}
+.contacts-icons {
+  display: flex;
+  padding: 5px 5px 5px 0;
+  max-width: 30px;
+  width: 100%;
 }
 .contacts-3 {
   padding-top: 10px;

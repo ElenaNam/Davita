@@ -74,7 +74,6 @@
     }
   }
   &-btn-wrapper {
-    
     margin-top: 10px;
     //боковые отступы
     padding: 0 30px;
@@ -84,19 +83,17 @@
       margin: 0 auto;
       display: block;
       width: 15px;
-      height: 20px;      
+      height: 20px;
     }
 
     & span:first-child {
       font-size: 18px;
       display: inline-block;
-      
     }
-/*     & a {
+    /*     & a {
       cursor: pointer;
       @include link();
     } */
-
   }
   &-slider.slick-slider {
     margin-bottom: 0;
@@ -114,6 +111,7 @@
 
       & a {
         text-decoration: none;
+        border-bottom: 1px solid #0d6efd;
         //outline: none;
       }
       & .card-body {

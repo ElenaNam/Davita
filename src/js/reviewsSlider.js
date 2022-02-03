@@ -1,8 +1,8 @@
 $(function () {
-  $(".reviews-slider").slick({
+  $("#reviews-slider").slick({
     mobileFirst: true,
     infinity: true,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     dots: true,
     slidesToShow: 1,
@@ -13,6 +13,7 @@ $(function () {
     pauseOnHover: true,
     pauseOnFocus: true,
     pauseOnDotsHover: true,
+    focusOnSelect: true,
     swipe: true,
     waitForAnimate: false,
     adaptiveHeight: true,
@@ -38,5 +39,18 @@ $(function () {
       },
     ],
   });
-
 });
+
+
+$("#reviews-slider").on(
+  "beforeChange",
+  function (event, slick, currentSlide, nextSlide) {
+    //остановить видео при перелистывании
+    $(".slick-current iframe").attr(
+      "src",
+      $(".slick-current iframe").attr("src")
+    );
+  }
+);
+
+
